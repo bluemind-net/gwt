@@ -19,8 +19,8 @@ import com.google.gwt.sample.validation.shared.Person;
 
 import java.lang.reflect.Method;
 
-import javax.validation.ConstraintValidator;
-import javax.validation.ConstraintValidatorContext;
+import jakarta.validation.ConstraintValidator;
+import jakarta.validation.ConstraintValidatorContext;
 
 /**
  * Fails only on the server if the persons name is "Fail".

@@ -20,7 +20,7 @@ import com.google.gwt.user.client.rpc.RpcTokenTestService;
 
 import java.util.Locale;
 
-import javax.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletRequest;
 
 /**
  * Remote service for testing RPC tokens support.

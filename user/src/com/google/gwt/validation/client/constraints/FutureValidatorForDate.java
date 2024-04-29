@@ -17,9 +17,9 @@ package com.google.gwt.validation.client.constraints;
 
 import java.util.Date;
 
-import javax.validation.ConstraintValidator;
-import javax.validation.ConstraintValidatorContext;
-import javax.validation.constraints.Future;
+import jakarta.validation.ConstraintValidator;
+import jakarta.validation.ConstraintValidatorContext;
+import jakarta.validation.constraints.Future;
 
 /**
  * {@link Future} constraint validator implementation for a

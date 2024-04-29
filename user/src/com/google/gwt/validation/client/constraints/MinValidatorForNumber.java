@@ -15,10 +15,10 @@
  */
 package com.google.gwt.validation.client.constraints;
 
-import javax.validation.ConstraintValidatorContext;
+import jakarta.validation.ConstraintValidatorContext;
 
 /**
- * {@link javax.validation.constraints.Min} constraint validator implementation
+ * {@link jakarta.validation.constraints.Min} constraint validator implementation
  * for a {@link Number}.
  */
 public class MinValidatorForNumber extends AbstractMinValidator<Number> {

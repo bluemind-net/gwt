@@ -60,13 +60,13 @@
 
     <!-- Hibernate bean validation binary for the server -->
     <dependency>
-      <groupId>javax.validation</groupId>
-      <artifactId>validation-api</artifactId>
+      <groupId>jakarta.validation</groupId>
+      <artifactId>jakarta.validation-api</artifactId>
     </dependency>
     <dependency>
       <groupId>org.hibernate</groupId>
       <artifactId>hibernate-validator</artifactId>
-      <version>4.1.0.Final</version>
+      <version>8.0.1.Final</version>
       <exclusions>
         <exclusion>
           <groupId>javax.xml.bind</groupId>
@@ -83,7 +83,7 @@
     <dependency>
       <groupId>org.hibernate</groupId>
       <artifactId>hibernate-validator</artifactId>
-      <version>4.1.0.Final</version>
+      <version>8.0.1.Final</version>
       <classifier>sources</classifier>
       <!-- "provided" so that we don't deploy -->
       <scope>provided</scope>

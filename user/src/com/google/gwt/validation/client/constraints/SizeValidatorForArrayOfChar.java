@@ -15,10 +15,10 @@
  */
 package com.google.gwt.validation.client.constraints;
 
-import javax.validation.ConstraintValidatorContext;
+import jakarta.validation.ConstraintValidatorContext;
 
 /**
- * {@link javax.validation.constraints.Size} constraint validator implementation
+ * {@link jakarta.validation.constraints.Size} constraint validator implementation
  * for a array of {@code char}s.
  */
 public class SizeValidatorForArrayOfChar extends

@@ -23,7 +23,7 @@ import com.google.gwt.validation.client.impl.AbstractGwtValidator;
 import org.hibernate.jsr303.tck.tests.validatorfactory.CustomConstraintValidatorTest.Dummy;
 import org.hibernate.jsr303.tck.tests.validatorfactory.CustomConstraintValidatorTest.SecondDummy;
 
-import javax.validation.Validator;
+import jakarta.validation.Validator;
 
 /**
  * {@link AbstractGwtValidatorFactory} implementation that uses

@@ -15,7 +15,7 @@
  */
 package com.google.gwt.validation.example.client;
 
-import javax.validation.constraints.Size;
+import jakarta.validation.constraints.Size;
 
 /**
  * From the jsr spec.

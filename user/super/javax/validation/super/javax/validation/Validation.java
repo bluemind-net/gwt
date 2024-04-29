@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package javax.validation;
+package jakarta.validation;
 
 /**
  * Pass through to GWT version {@link com.google.gwt.validation.client.impl.Validation}.

@@ -19,7 +19,7 @@ import com.google.gwt.core.client.GWT;
 import com.google.gwt.validation.client.constraints.PatternValidatorGwtTest.Flagged;
 import com.google.gwt.validation.client.impl.AbstractGwtValidator;
 
-import javax.validation.Validator;
+import jakarta.validation.Validator;
 
 /**
  * Factory to create the Validator specified by {@link GwtValidator}.

@@ -18,7 +18,7 @@ package com.google.gwt.user.server.rpc;
 import com.google.gwt.user.client.rpc.RpcToken;
 import com.google.gwt.user.client.rpc.RpcTokenException;
 
-import javax.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletRequest;
 
 /**
  * {@link RemoteServiceServlet} implementation for RPC tokens support tests.

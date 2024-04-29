@@ -23,7 +23,7 @@ import com.google.gwt.validation.client.impl.AbstractGwtValidator;
 import org.hibernate.jsr303.tck.tests.messageinterpolation.MessageInterpolationTest.DummyEntity;
 import org.hibernate.jsr303.tck.tests.messageinterpolation.MessageInterpolationTest.Person;
 
-import javax.validation.Validator;
+import jakarta.validation.Validator;
 
 /**
  * {@link AbstractGwtValidatorFactory} implementation that uses

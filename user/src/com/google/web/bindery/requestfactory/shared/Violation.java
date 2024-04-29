@@ -17,10 +17,10 @@ package com.google.web.bindery.requestfactory.shared;
 
 /**
  * A lightweight representation of a
- * {@link javax.validation.ConstraintViolation}.
+ * {@link jakarta.validation.ConstraintViolation}.
  * 
  * @deprecated users should upgrade to the full
- *             {@link javax.validation.ConstraintViolation} type by switching
+ *             {@link jakarta.validation.ConstraintViolation} type by switching
  *             their {@link Receiver} implementations to use
  *             {@link Receiver#onConstraintViolation(java.util.Set)} instead of
  *             {@link Receiver#onViolation(java.util.Set)}.

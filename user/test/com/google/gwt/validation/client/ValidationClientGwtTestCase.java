@@ -17,8 +17,8 @@ package com.google.gwt.validation.client;
 
 import com.google.gwt.junit.client.GWTTestCase;
 
-import javax.validation.Validation;
-import javax.validation.Validator;
+import jakarta.validation.Validation;
+import jakarta.validation.Validator;
 
 /**
  * Base {@link GWTTestCase} for Validation Client tests.

@@ -1282,9 +1282,9 @@ public class CompilationUnitTypeOracleUpdater extends TypeOracleUpdater {
   /**
    * Suppress multiple validation related messages and replace with a hint.
    */
-  // TODO(zundel): Can be removed when javax.validation is included in the JRE
+  // TODO(zundel): Can be removed when jakarta.validation is included in the JRE
   private boolean shouldSuppressUnresolvableAnnotation(TreeLogger logger, String sourceName) {
-    if (sourceName.startsWith("javax.validation.")
+    if (sourceName.startsWith("jakarta.validation.")
         || sourceName.startsWith("com.google.gwt.validation.")) {
       if (!warnedMissingValidationJar) {
         warnedMissingValidationJar = true;

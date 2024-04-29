@@ -15,8 +15,8 @@
  */
 package com.google.gwt.sample.validation.shared;
 
-import javax.validation.ConstraintValidator;
-import javax.validation.ConstraintValidatorContext;
+import jakarta.validation.ConstraintValidator;
+import jakarta.validation.ConstraintValidatorContext;
 
 /**
  * This is always valid.

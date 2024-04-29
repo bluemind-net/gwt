@@ -19,13 +19,13 @@ package org.hibernate.jsr303.tck.tests.validation;
 
 import java.util.ArrayList;
 import java.util.List;
-import javax.validation.Configuration;
-import javax.validation.Validation;
-import javax.validation.ValidationProviderResolver;
-import javax.validation.ValidatorFactory;
-import javax.validation.bootstrap.GenericBootstrap;
-import javax.validation.bootstrap.ProviderSpecificBootstrap;
-import javax.validation.spi.ValidationProvider;
+import jakarta.validation.Configuration;
+import jakarta.validation.Validation;
+import jakarta.validation.ValidationProviderResolver;
+import jakarta.validation.ValidatorFactory;
+import jakarta.validation.bootstrap.GenericBootstrap;
+import jakarta.validation.bootstrap.ProviderSpecificBootstrap;
+import jakarta.validation.spi.ValidationProvider;
 
 import org.jboss.test.audit.annotations.SpecAssertion;
 import org.jboss.test.audit.annotations.SpecAssertions;

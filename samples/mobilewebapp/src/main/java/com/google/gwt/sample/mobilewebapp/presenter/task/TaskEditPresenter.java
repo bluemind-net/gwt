@@ -31,7 +31,7 @@ import com.google.web.bindery.requestfactory.shared.ServerFailure;
 import java.util.Set;
 import java.util.logging.Logger;
 
-import javax.validation.ConstraintViolation;
+import jakarta.validation.ConstraintViolation;
 
 /**
  * Drives a {@link TaskEditView} to fetch and edit a given task, or to create a

@@ -26,7 +26,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import javax.validation.Path;
+import jakarta.validation.Path;
 
 /**
  * @author Hardy Ferentschik

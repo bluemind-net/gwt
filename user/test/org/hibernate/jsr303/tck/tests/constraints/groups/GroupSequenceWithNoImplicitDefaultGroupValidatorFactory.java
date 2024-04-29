@@ -22,8 +22,8 @@ import com.google.gwt.validation.client.impl.AbstractGwtValidator;
 
 import org.hibernate.jsr303.tck.tests.constraints.groups.DefaultGroupRedefinitionTest.AddressWithDefaultInGroupSequence;
 
-import javax.validation.Validator;
-import javax.validation.groups.Default;
+import jakarta.validation.Validator;
+import jakarta.validation.groups.Default;
 
 /**
  * ValidatorFactory for

@@ -12,7 +12,7 @@ public interface ValidationMessages extends com.google.gwt.i18n.client.Constants
    * @return translated "must be false"
    */
   @DefaultStringValue("must be false")
-  @Key("javax.validation.constraints.AssertFalse.message")
+  @Key("jakarta.validation.constraints.AssertFalse.message")
   String javax_validation_constraints_AssertFalse_message();
 
   /**
@@ -21,7 +21,7 @@ public interface ValidationMessages extends com.google.gwt.i18n.client.Constants
    * @return translated "must be true"
    */
   @DefaultStringValue("must be true")
-  @Key("javax.validation.constraints.AssertTrue.message")
+  @Key("jakarta.validation.constraints.AssertTrue.message")
   String javax_validation_constraints_AssertTrue_message();
 
   /**
@@ -30,7 +30,7 @@ public interface ValidationMessages extends com.google.gwt.i18n.client.Constants
    * @return translated "must be less than or equal to {value}"
    */
   @DefaultStringValue("must be less than or equal to {value}")
-  @Key("javax.validation.constraints.DecimalMax.message")
+  @Key("jakarta.validation.constraints.DecimalMax.message")
   String javax_validation_constraints_DecimalMax_message();
 
   /**
@@ -39,7 +39,7 @@ public interface ValidationMessages extends com.google.gwt.i18n.client.Constants
    * @return translated "must be greater than or equal to {value}"
    */
   @DefaultStringValue("must be greater than or equal to {value}")
-  @Key("javax.validation.constraints.DecimalMin.message")
+  @Key("jakarta.validation.constraints.DecimalMin.message")
   String javax_validation_constraints_DecimalMin_message();
 
   /**
@@ -48,7 +48,7 @@ public interface ValidationMessages extends com.google.gwt.i18n.client.Constants
    * @return translated "numeric value out of bounds (<{integer} digits>.<{fraction} digits> expected)"
    */
   @DefaultStringValue("numeric value out of bounds (<{integer} digits>.<{fraction} digits> expected)")
-  @Key("javax.validation.constraints.Digits.message")
+  @Key("jakarta.validation.constraints.Digits.message")
   String javax_validation_constraints_Digits_message();
 
   /**
@@ -57,7 +57,7 @@ public interface ValidationMessages extends com.google.gwt.i18n.client.Constants
    * @return translated "must be in the future"
    */
   @DefaultStringValue("must be in the future")
-  @Key("javax.validation.constraints.Future.message")
+  @Key("jakarta.validation.constraints.Future.message")
   String javax_validation_constraints_Future_message();
 
   /**
@@ -66,7 +66,7 @@ public interface ValidationMessages extends com.google.gwt.i18n.client.Constants
    * @return translated "must be less than or equal to {value}"
    */
   @DefaultStringValue("must be less than or equal to {value}")
-  @Key("javax.validation.constraints.Max.message")
+  @Key("jakarta.validation.constraints.Max.message")
   String javax_validation_constraints_Max_message();
 
   /**
@@ -75,7 +75,7 @@ public interface ValidationMessages extends com.google.gwt.i18n.client.Constants
    * @return translated "must be greater than or equal to {value}"
    */
   @DefaultStringValue("must be greater than or equal to {value}")
-  @Key("javax.validation.constraints.Min.message")
+  @Key("jakarta.validation.constraints.Min.message")
   String javax_validation_constraints_Min_message();
 
   /**
@@ -84,7 +84,7 @@ public interface ValidationMessages extends com.google.gwt.i18n.client.Constants
    * @return translated "may not be null"
    */
   @DefaultStringValue("may not be null")
-  @Key("javax.validation.constraints.NotNull.message")
+  @Key("jakarta.validation.constraints.NotNull.message")
   String javax_validation_constraints_NotNull_message();
 
   /**
@@ -93,7 +93,7 @@ public interface ValidationMessages extends com.google.gwt.i18n.client.Constants
    * @return translated "must be null"
    */
   @DefaultStringValue("must be null")
-  @Key("javax.validation.constraints.Null.message")
+  @Key("jakarta.validation.constraints.Null.message")
   String javax_validation_constraints_Null_message();
 
   /**
@@ -102,7 +102,7 @@ public interface ValidationMessages extends com.google.gwt.i18n.client.Constants
    * @return translated "must be in the past"
    */
   @DefaultStringValue("must be in the past")
-  @Key("javax.validation.constraints.Past.message")
+  @Key("jakarta.validation.constraints.Past.message")
   String javax_validation_constraints_Past_message();
 
   /**
@@ -111,7 +111,7 @@ public interface ValidationMessages extends com.google.gwt.i18n.client.Constants
    * @return translated "must match \"{regexp}\""
    */
   @DefaultStringValue("must match \"{regexp}\"")
-  @Key("javax.validation.constraints.Pattern.message")
+  @Key("jakarta.validation.constraints.Pattern.message")
   String javax_validation_constraints_Pattern_message();
 
   /**
@@ -120,7 +120,7 @@ public interface ValidationMessages extends com.google.gwt.i18n.client.Constants
    * @return translated "size must be between {min} and {max}"
    */
   @DefaultStringValue("size must be between {min} and {max}")
-  @Key("javax.validation.constraints.Size.message")
+  @Key("jakarta.validation.constraints.Size.message")
   String javax_validation_constraints_Size_message();
 
   /**

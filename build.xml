@@ -207,9 +207,9 @@
         <fileset dir="${gwt.build.lib}" includes="gwt-user.jar,gwt-dev.jar"/>
         <pathelement path="${java.class.path}"/>
         <pathelement location="${gwt.tools.lib}/apache/ant-zipscanner/ant-zipscanner-1.6.5-1-rebased.jar"/>
-        <pathelement location="${gwt.tools.lib}/javax/validation/validation-api-1.0.0.GA.jar"/>
+        <pathelement location="${gwt.tools.lib}/jakarta-validation/jakarta.validation-api-3.0.2/jakarta.validation-api-3.0.2.jar"/>
         <pathelement
-            location="${gwt.tools.lib}/hibernate/validator/hibernate-validator-4.1.0.Final.jar"/>
+            location="${gwt.tools.lib}/hibernate/validator/hibernate-validator-8.0.1.Final.jar"/>
 
       </classpath>
       <arg value="-refJar"/>
@@ -220,7 +220,7 @@
       <arg value="ERROR"/>
       <!-- Needed for checking types that include validation APIs -->
       <arg value="-validationSourceJars"/>
-      <arg path="${gwt.tools.lib}/javax/validation/validation-api-1.0.0.GA-sources.jar"/>
+      <arg path="${gwt.tools.lib}/jakarta-validation/jakarta.validation-api-3.0.2/jakarta.validation-api-3.0.2-sources.jar"/>
     </java>
   </target>
 

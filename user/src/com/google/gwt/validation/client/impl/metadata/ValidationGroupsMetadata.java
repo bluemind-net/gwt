@@ -25,7 +25,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.Stack;
 
-import javax.validation.groups.Default;
+import jakarta.validation.groups.Default;
 
 
 /**

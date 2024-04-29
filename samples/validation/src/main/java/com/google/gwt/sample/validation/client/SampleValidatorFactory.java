@@ -22,8 +22,8 @@ import com.google.gwt.validation.client.AbstractGwtValidatorFactory;
 import com.google.gwt.validation.client.GwtValidation;
 import com.google.gwt.validation.client.impl.AbstractGwtValidator;
 
-import javax.validation.Validator;
-import javax.validation.groups.Default;
+import jakarta.validation.Validator;
+import jakarta.validation.groups.Default;
 
 /**
  * {@link AbstractGwtValidatorFactory} that creates the specified {@link GwtValidator}.

@@ -21,12 +21,12 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
-import javax.validation.ConstraintValidatorFactory;
-import javax.validation.ConstraintViolation;
-import javax.validation.MessageInterpolator;
-import javax.validation.TraversableResolver;
-import javax.validation.ValidationException;
-import javax.validation.Validator;
+import jakarta.validation.ConstraintValidatorFactory;
+import jakarta.validation.ConstraintViolation;
+import jakarta.validation.MessageInterpolator;
+import jakarta.validation.TraversableResolver;
+import jakarta.validation.ValidationException;
+import jakarta.validation.Validator;
 
 /**
  * Base methods for implementing {@link Validator} in GWT.

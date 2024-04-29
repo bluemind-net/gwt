@@ -26,9 +26,9 @@ import java.io.OutputStreamWriter;
 import java.io.Writer;
 import java.net.URL;
 
-import javax.servlet.ServletOutputStream;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.ServletOutputStream;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 
 /**
  * Common HTTP responses that send HTML pages. For non-HTML pages, see {@link Responses}.

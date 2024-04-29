@@ -17,7 +17,7 @@ package com.google.gwt.user.server.rpc;
 
 import com.google.gwt.user.client.rpc.RemoteServiceServletTestService;
 
-import javax.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletRequest;
 
 /**
  * A RemoteService for testing the details of the "over-HTTP" part of

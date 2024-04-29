@@ -26,8 +26,8 @@ import com.googlecode.objectify.cmd.Query;
 import java.util.Date;
 import java.util.List;
 
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
 
 /**
  * A task used in the task list. This is a monolothic implementation of a data object

@@ -27,7 +27,7 @@ import com.google.gwt.dev.shell.BrowserListener;
 import com.google.gwt.dev.shell.CodeServerListener;
 import com.google.gwt.dev.shell.OophmSessionHandler;
 import com.google.gwt.dev.shell.SuperDevListener;
-import com.google.gwt.dev.shell.jetty.JettyLauncher;
+import com.google.gwt.dev.shell.StaticResourceServer;
 import com.google.gwt.dev.ui.RestartServerCallback;
 import com.google.gwt.dev.ui.RestartServerEvent;
 import com.google.gwt.dev.util.InstalledHelpInfo;
@@ -127,7 +127,7 @@ public class DevMode extends DevModeBase implements RestartServerCallback {
    */
   protected static class ArgHandlerServer extends ArgHandlerString {
 
-    private static final String DEFAULT_SCL = JettyLauncher.class.getName();
+    private static final String DEFAULT_SCL = StaticResourceServer.class.getName();
 
     private HostedModeOptions options;
 
@@ -599,12 +599,11 @@ public class DevMode extends DevModeBase implements RestartServerCallback {
 
     Event jettyStartupEvent = SpeedTracerLogger.start(DevModeEventType.JETTY_STARTUP);
     boolean clearCallback = true;
+    ServletContainerLauncher scl = options.getServletContainerLauncher();
+    TreeLogger serverLogger = ui.getWebServerLogger(getWebServerName(), scl.getIconBytes());
+    
     try {
       ui.setCallback(RestartServerEvent.getType(), this);
-
-      ServletContainerLauncher scl = options.getServletContainerLauncher();
-
-      TreeLogger serverLogger = ui.getWebServerLogger(getWebServerName(), scl.getIconBytes());
 
       String sclArgs = options.getServletContainerLauncherArgs();
       if (sclArgs != null) {
@@ -624,8 +623,8 @@ public class DevMode extends DevModeBase implements RestartServerCallback {
        * TODO: This is a hack to pass the base log level to the SCL. We'll have
        * to figure out a better way to do this for SCLs in general.
        */
-      if (scl instanceof JettyLauncher) {
-        JettyLauncher jetty = (JettyLauncher) scl;
+      if (scl instanceof StaticResourceServer) {
+        StaticResourceServer jetty = (StaticResourceServer) scl;
         jetty.setBaseRequestLogLevel(getBaseLogLevelForUI());
       }
       scl.setBindAddress(options.getBindAddress());
@@ -634,14 +633,21 @@ public class DevMode extends DevModeBase implements RestartServerCallback {
         serverLogger.log(TreeLogger.TRACE, "Starting HTTP on port " + getPort(), null);
       }
       server = scl.start(serverLogger, getPort(), options.getWarDir());
+      serverLogger.log(TreeLogger.INFO, "Started ! " + (server != null ? "true" : "false"));
       assert (server != null);
       clearCallback = false;
+      serverLogger.log(TreeLogger.INFO, "Return server port " + server.getPort());
       return server.getPort();
     } catch (BindException e) {
-      System.err.println("Port " + options.getBindAddress() + ':' + getPort()
-          + " is already in use; you probably still have another session active");
+      String msg = "Port " + options.getBindAddress() + ':' + getPort() + " is already in use; you probably still have another session active";
+      serverLogger.log(TreeLogger.ERROR, msg);
+      serverLogger.log(TreeLogger.ERROR, e.getMessage());
+      System.err.println(msg);
     } catch (Exception e) {
-      System.err.println("Unable to start embedded HTTP server");
+      String msg = "Unable to start embedded HTTP server";
+      serverLogger.log(TreeLogger.ERROR, msg);
+      serverLogger.log(TreeLogger.ERROR, e.getMessage());
+      System.err.println(msg);
       e.printStackTrace();
     } finally {
       jettyStartupEvent.end();

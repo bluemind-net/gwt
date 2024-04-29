@@ -17,16 +17,16 @@
 */
 package org.hibernate.jsr303.tck.common;
 
-import javax.validation.Configuration;
-import javax.validation.MessageInterpolator;
-import javax.validation.Validator;
-import javax.validation.ValidatorContext;
-import javax.validation.ValidatorFactory;
-import javax.validation.TraversableResolver;
-import javax.validation.ConstraintValidatorFactory;
-import javax.validation.spi.BootstrapState;
-import javax.validation.spi.ConfigurationState;
-import javax.validation.spi.ValidationProvider;
+import jakarta.validation.Configuration;
+import jakarta.validation.MessageInterpolator;
+import jakarta.validation.Validator;
+import jakarta.validation.ValidatorContext;
+import jakarta.validation.ValidatorFactory;
+import jakarta.validation.TraversableResolver;
+import jakarta.validation.ConstraintValidatorFactory;
+import jakarta.validation.spi.BootstrapState;
+import jakarta.validation.spi.ConfigurationState;
+import jakarta.validation.spi.ValidationProvider;
 
 /**
  *

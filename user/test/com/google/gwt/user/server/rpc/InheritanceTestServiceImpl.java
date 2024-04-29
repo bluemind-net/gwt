@@ -28,7 +28,7 @@ import com.google.gwt.user.client.rpc.InheritanceTestSetFactory.SerializableClas
 import com.google.gwt.user.client.rpc.InheritanceTestSetValidator;
 import com.google.gwt.user.client.rpc.SerializationException;
 
-import javax.servlet.ServletContext;
+import jakarta.servlet.ServletContext;
 
 /**
  * Servlet used by the {@link com.google.gwt.user.client.rpc.InheritanceTest

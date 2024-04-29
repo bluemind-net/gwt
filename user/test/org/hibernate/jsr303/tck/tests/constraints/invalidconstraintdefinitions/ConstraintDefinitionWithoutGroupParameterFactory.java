@@ -23,7 +23,7 @@ import com.google.gwt.validation.client.impl.AbstractGwtValidator;
 import org.hibernate.jsr303.tck.tests.constraints.groups.DefaultGroupRedefinitionTest;
 import org.hibernate.jsr303.tck.tests.constraints.invalidconstraintdefinitions.InvalidConstraintDefinitionsTest.DummyEntityNoGroups;
 
-import javax.validation.Validator;
+import jakarta.validation.Validator;
 
 /**
  * ValidatorFactory for

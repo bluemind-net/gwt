@@ -118,7 +118,7 @@
     <gwt.jar destfile="${project.lib.deps}">
       <zipfileset src="${gwt.tools.lib}/gson/gson-2.6.2.jar"/>
       <!-- The following jar satisfies RequestFactory dependencies. -->
-      <zipfileset src="${gwt.tools.lib}/javax/validation/validation-api-1.0.0.GA.jar" />
+      <zipfileset src="${gwt.tools.lib}/jakarta-validation/jakarta.validation-api-3.0.2/jakarta.validation-api-3.0.2.jar" />
     </gwt.jar>
   </target>
 </project>

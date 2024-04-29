@@ -17,8 +17,8 @@ package com.google.gwt.validation.client.constraints;
 
 import java.lang.annotation.Annotation;
 
-import javax.validation.ConstraintValidator;
-import javax.validation.ConstraintValidatorContext;
+import jakarta.validation.ConstraintValidator;
+import jakarta.validation.ConstraintValidatorContext;
 
 /**
  * Masks a {@link ConstraintValidator} that is not GWT compatible. This

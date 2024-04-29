@@ -5,7 +5,7 @@ import com.google.gwt.validation.client.AbstractGwtValidatorFactory;
 import com.google.gwt.validation.client.GwtValidation;
 import com.google.gwt.validation.client.impl.AbstractGwtValidator;
 
-import javax.validation.Validator;
+import jakarta.validation.Validator;
 
 /**
  * {@link AbstractGwtValidatorFactory} implementation that uses

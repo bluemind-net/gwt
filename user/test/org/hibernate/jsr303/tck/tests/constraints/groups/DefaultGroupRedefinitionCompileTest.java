@@ -21,7 +21,7 @@ import org.hibernate.jsr303.tck.util.TckCompileTestCase;
 
 import java.util.regex.Pattern;
 
-import javax.validation.GroupDefinitionException;
+import jakarta.validation.GroupDefinitionException;
 
 /**
  * Test wrapper for {@link DefaultGroupRedefinitionTest} tests that are meant to

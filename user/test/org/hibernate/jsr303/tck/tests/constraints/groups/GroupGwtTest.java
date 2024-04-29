@@ -17,7 +17,7 @@ package org.hibernate.jsr303.tck.tests.constraints.groups;
 
 import com.google.gwt.junit.client.GWTTestCase;
 
-import javax.validation.GroupDefinitionException;
+import jakarta.validation.GroupDefinitionException;
 
 /**
  * Test wrapper for {@link GroupTest}.

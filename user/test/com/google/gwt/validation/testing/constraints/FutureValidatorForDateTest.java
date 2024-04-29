@@ -19,7 +19,7 @@ import com.google.gwt.validation.client.constraints.FutureValidatorForDate;
 
 import java.util.Date;
 
-import javax.validation.constraints.Future;
+import jakarta.validation.constraints.Future;
 
 /**
  * Tests for {@link FutureValidatorForDate}.

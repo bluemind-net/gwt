@@ -29,7 +29,7 @@
   <!-- Specify the Validator for the Validation bootstrap to use. -->
   <replace-with
     class="com.google.gwt.sample.validation.client.SampleValidatorFactory">
-    <when-type-is class="javax.validation.ValidatorFactory" />
+    <when-type-is class="jakarta.validation.ValidatorFactory" />
   </replace-with>
   
   <!-- TODO(nchalko) figure out how to make this a attribute of the GwtValidation

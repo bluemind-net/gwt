@@ -17,12 +17,12 @@
 */
 package org.hibernate.jsr303.tck.common;
 
-import javax.validation.Configuration;
-import javax.validation.ConstraintValidatorFactory;
-import javax.validation.MessageInterpolator;
-import javax.validation.TraversableResolver;
-import javax.validation.ValidatorFactory;
-import javax.validation.spi.ValidationProvider;
+import jakarta.validation.Configuration;
+import jakarta.validation.ConstraintValidatorFactory;
+import jakarta.validation.MessageInterpolator;
+import jakarta.validation.TraversableResolver;
+import jakarta.validation.ValidatorFactory;
+import jakarta.validation.spi.ValidationProvider;
 
 /**
  * Modified by Google:

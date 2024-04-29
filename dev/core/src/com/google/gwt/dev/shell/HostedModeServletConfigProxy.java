@@ -17,8 +17,8 @@ package com.google.gwt.dev.shell;
 
 import java.util.Enumeration;
 
-import javax.servlet.ServletConfig;
-import javax.servlet.ServletContext;
+import jakarta.servlet.ServletConfig;
+import jakarta.servlet.ServletContext;
 
 /**
  * {@link ServletConfig} proxy which ensures that an un-proxied
@@ -37,7 +37,7 @@ class HostedModeServletConfigProxy implements ServletConfig {
   /**
    * @param arg0
    * @return
-   * @see javax.servlet.ServletConfig#getInitParameter(java.lang.String)
+   * @see jakarta.servlet.ServletConfig#getInitParameter(java.lang.String)
    */
   @Override
   public String getInitParameter(String arg0) {
@@ -46,7 +46,7 @@ class HostedModeServletConfigProxy implements ServletConfig {
 
   /**
    * @return
-   * @see javax.servlet.ServletConfig#getInitParameterNames()
+   * @see jakarta.servlet.ServletConfig#getInitParameterNames()
    */
   @Override
   @SuppressWarnings("unchecked")
@@ -56,7 +56,7 @@ class HostedModeServletConfigProxy implements ServletConfig {
 
   /**
    * @return
-   * @see javax.servlet.ServletConfig#getServletContext()
+   * @see jakarta.servlet.ServletConfig#getServletContext()
    */
   @Override
   public ServletContext getServletContext() {
@@ -65,7 +65,7 @@ class HostedModeServletConfigProxy implements ServletConfig {
 
   /**
    * @return
-   * @see javax.servlet.ServletConfig#getServletName()
+   * @see jakarta.servlet.ServletConfig#getServletName()
    */
   @Override
   public String getServletName() {

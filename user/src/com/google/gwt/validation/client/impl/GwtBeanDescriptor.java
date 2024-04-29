@@ -17,7 +17,7 @@ package com.google.gwt.validation.client.impl;
 
 import com.google.gwt.validation.client.impl.metadata.ValidationGroupsMetadata;
 
-import javax.validation.metadata.BeanDescriptor;
+import jakarta.validation.metadata.BeanDescriptor;
 
 /**
  * Marker interface used by GWT to generate a {@link BeanDescriptor} for a

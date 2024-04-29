@@ -17,10 +17,10 @@ package com.google.gwt.validation.client.constraints;
 
 import java.math.BigDecimal;
 
-import javax.validation.ConstraintValidatorContext;
+import jakarta.validation.ConstraintValidatorContext;
 
 /**
- * {@link javax.validation.constraints.Min} constraint validator implementation
+ * {@link jakarta.validation.constraints.Min} constraint validator implementation
  * for a {@link String}.
  */
 public class MinValidatorForString extends AbstractMinValidator<String> {

@@ -19,6 +19,7 @@ import com.google.gwt.user.client.rpc.CustomFieldSerializer;
 import com.google.gwt.user.client.rpc.SerializationException;
 import com.google.gwt.user.client.rpc.SerializationStreamReader;
 import com.google.gwt.user.client.rpc.SerializationStreamWriter;
+import com.google.gwt.validation.client.impl.PathImpl;
 
 /**
  * Custom Serializer for {@link PathImpl}.
@@ -36,7 +37,7 @@ public class PathImpl_CustomFieldSerializer extends
       throws SerializationException {
     String propertyPath = streamReader.readString();
 
-    return PathImpl.createPathFromString(propertyPath);
+    return new PathImpl().append(propertyPath);
   }
 
   public static void serialize(SerializationStreamWriter streamWriter,

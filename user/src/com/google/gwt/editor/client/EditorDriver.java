@@ -17,7 +17,7 @@ package com.google.gwt.editor.client;
 
 import java.util.List;
 
-import javax.validation.ConstraintViolation;
+import jakarta.validation.ConstraintViolation;
 
 /**
  * Defines common capabilities of editor drivers.
@@ -85,7 +85,7 @@ public interface EditorDriver<T> {
 
   /**
    * Show {@link ConstraintViolation ConstraintViolations} generated through a
-   * {@link javax.validation.Validator Validator}. The violations will be
+   * {@link jakarta.validation.Validator Validator}. The violations will be
    * converted into {@link EditorError} objects whose
    * {@link EditorError#getUserData() getUserData()} method can be used to
    * access the original ConstraintViolation object.

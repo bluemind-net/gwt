@@ -21,7 +21,7 @@ import com.google.gwt.user.server.rpc.XsrfProtect;
 
 import junit.framework.TestCase;
 
-import javax.servlet.http.Cookie;
+import jakarta.servlet.http.Cookie;
 
 /**
  * Utility methods tests.

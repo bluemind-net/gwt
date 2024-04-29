@@ -19,14 +19,14 @@ import com.google.gwt.core.client.GWT;
 
 import java.util.List;
 
-import javax.validation.Configuration;
-import javax.validation.ValidationException;
-import javax.validation.ValidationProviderResolver;
-import javax.validation.ValidatorFactory;
-import javax.validation.bootstrap.GenericBootstrap;
-import javax.validation.bootstrap.ProviderSpecificBootstrap;
-import javax.validation.spi.BootstrapState;
-import javax.validation.spi.ValidationProvider;
+import jakarta.validation.Configuration;
+import jakarta.validation.ValidationException;
+import jakarta.validation.ValidationProviderResolver;
+import jakarta.validation.ValidatorFactory;
+import jakarta.validation.bootstrap.GenericBootstrap;
+import jakarta.validation.bootstrap.ProviderSpecificBootstrap;
+import jakarta.validation.spi.BootstrapState;
+import jakarta.validation.spi.ValidationProvider;
 
 /**
  * This class is the entry point for Bean Validation. Bootstrapping is done as follows:
@@ -47,7 +47,7 @@ import javax.validation.spi.ValidationProvider;
  * generate an exception.
  * <p>
  * This class was modified by Google from the original
- * javax.validation.Validation source to make it suitable for GWT.
+ * jakarta.validation.Validation source to make it suitable for GWT.
  */
 public class Validation {
 

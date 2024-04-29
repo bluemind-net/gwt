@@ -19,8 +19,8 @@ import org.hibernate.jsr303.tck.util.TckCompileTestCase;
 
 import java.util.regex.Pattern;
 
-import javax.validation.ConstraintDefinitionException;
-import javax.validation.Validator;
+import jakarta.validation.ConstraintDefinitionException;
+import jakarta.validation.Validator;
 
 /**
  * Test wrapper for

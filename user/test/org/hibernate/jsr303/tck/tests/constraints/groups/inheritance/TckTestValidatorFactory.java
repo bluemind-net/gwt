@@ -26,8 +26,8 @@ import org.hibernate.jsr303.tck.tests.constraints.groups.inheritance.GroupInheri
 import org.hibernate.jsr303.tck.tests.constraints.groups.inheritance.GroupInheritanceTest.PostManufacturing;
 import org.hibernate.jsr303.tck.tests.constraints.groups.inheritance.GroupInheritanceTest.PreManufacturing;
 
-import javax.validation.Validator;
-import javax.validation.groups.Default;
+import jakarta.validation.Validator;
+import jakarta.validation.groups.Default;
 
 /**
  * {@link AbstractGwtValidatorFactory} implementation that uses

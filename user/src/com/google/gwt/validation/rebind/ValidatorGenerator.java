@@ -25,7 +25,7 @@ import com.google.gwt.core.ext.typeinfo.TypeOracle;
 import com.google.gwt.validation.client.GwtValidation;
 import com.google.gwt.validation.client.impl.GwtSpecificValidator;
 
-import javax.validation.Validator;
+import jakarta.validation.Validator;
 
 /**
  * Generates subclasses of {@link Validator} and {@link GwtSpecificValidator}. The generic

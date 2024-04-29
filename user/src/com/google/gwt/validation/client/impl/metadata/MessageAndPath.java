@@ -15,12 +15,12 @@
  */
 package com.google.gwt.validation.client.impl.metadata;
 
-import javax.validation.Path;
+import jakarta.validation.Path;
 
 /**
  * Holds as Message and a Path.
  * <p>
- * Used to build a {@link javax.validation.ConstraintViolation}
+ * Used to build a {@link jakarta.validation.ConstraintViolation}
  */
 public final class MessageAndPath {
 

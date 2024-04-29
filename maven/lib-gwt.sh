@@ -85,7 +85,7 @@ function maven-gwt() {
   echo "Removing bundled third-parties from gwt-user"
   zip -q $GWT_EXTRACT_DIR/gwt-user.jar --copy --out $GWT_EXTRACT_DIR/gwt-user-trimmed.jar \
       "com/google/gwt/*" "com/google/web/bindery/*" "javaemul/*" \
-      "javax/validation/*" "org/hibernate/validator/*" \
+      "jakarta/validation/*" "org/hibernate/validator/*" \
       "org/w3c/flute/*"
   mv $GWT_EXTRACT_DIR/gwt-user-trimmed.jar $GWT_EXTRACT_DIR/gwt-user.jar
 

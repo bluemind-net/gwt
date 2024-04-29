@@ -17,7 +17,7 @@ package com.google.gwt.validation.testing.constraints;
 
 import com.google.gwt.validation.client.constraints.AssertTrueValidator;
 
-import javax.validation.constraints.AssertTrue;
+import jakarta.validation.constraints.AssertTrue;
 
 /**
  * Tests for {@link AssertTrueValidator}.

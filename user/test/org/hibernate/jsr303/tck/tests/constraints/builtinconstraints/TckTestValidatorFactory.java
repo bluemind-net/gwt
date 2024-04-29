@@ -34,7 +34,7 @@ import org.hibernate.jsr303.tck.tests.constraints.builtinconstraints.BuiltinCons
 import org.hibernate.jsr303.tck.tests.constraints.builtinconstraints.BuiltinConstraintsTest.PatternDummyEntity;
 import org.hibernate.jsr303.tck.tests.constraints.builtinconstraints.BuiltinConstraintsTest.SizeDummyEntity;
 
-import javax.validation.Validator;
+import jakarta.validation.Validator;
 
 /**
  * {@link AbstractGwtValidatorFactory} implementation that uses

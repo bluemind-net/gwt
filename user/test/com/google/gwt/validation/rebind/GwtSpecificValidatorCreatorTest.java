@@ -28,8 +28,8 @@ import java.lang.annotation.Annotation;
 import java.util.List;
 import java.util.Set;
 
-import javax.validation.ConstraintValidator;
-import javax.validation.constraints.Size;
+import jakarta.validation.ConstraintValidator;
+import jakarta.validation.constraints.Size;
 
 /**
  * NonGWT tests for {@link GwtSpecificValidatorCreator}.

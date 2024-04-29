@@ -21,7 +21,7 @@
         </license>
     </licenses>
     <properties>
-      <jetty.version>9.4.44.v20210927</jetty.version>
+      <jetty.version>12.0.8</jetty.version>
       <asm.version>9.2</asm.version>
     </properties>
     <dependencyManagement>
@@ -84,19 +84,19 @@
                 <version>2.0.0</version>
             </dependency>
             <dependency>
-                <groupId>javax.servlet</groupId>
-                <artifactId>javax.servlet-api</artifactId>
-                <version>3.1.0</version>
+                <groupId>jakarta.servlet</groupId>
+                <artifactId>jakarta.servlet-api</artifactId>
+                <version>6.0.0</version>
             </dependency>
             <dependency>
-                <groupId>javax.validation</groupId>
-                <artifactId>validation-api</artifactId>
-                <version>1.0.0.GA</version>
+                <groupId>jakarta.validation</groupId>
+                <artifactId>jakarta.validation-api</artifactId>
+                <version>3.0.2</version>
             </dependency>
             <dependency>
-                <groupId>javax.validation</groupId>
-                <artifactId>validation-api</artifactId>
-                <version>1.0.0.GA</version>
+                <groupId>jakarta.validation</groupId>
+                <artifactId>jakarta.validation-api</artifactId>
+                <version>3.0.2</version>
                 <!-- Note: use classifier=sources rather than type=java-sources so they're added to the classpath -->
                 <classifier>sources</classifier>
             </dependency>
@@ -162,26 +162,26 @@
             </dependency>
             <!-- For DevMode / JUnitShell (transitive dependency on jetty-server for CodeServer) -->
             <dependency>
-                <groupId>org.eclipse.jetty</groupId>
-                <artifactId>jetty-webapp</artifactId>
+                <groupId>org.eclipse.jetty.ee10</groupId>
+                <artifactId>jetty-ee10-webapp</artifactId>
                 <version>${jetty.version}</version>
             </dependency>
             <!-- For CodeServer (GZip support) -->
             <dependency>
-                <groupId>org.eclipse.jetty</groupId>
-                <artifactId>jetty-servlets</artifactId>
+                <groupId>org.eclipse.jetty.ee10</groupId>
+                <artifactId>jetty-ee10-servlets</artifactId>
                 <version>${jetty.version}</version>
             </dependency>
             <!-- For JSPs (and annotations scanning) in DevMode -->
             <!-- Those two dependencies are actually optional, included here mostly for backwards compatibility -->
             <dependency>
-                <groupId>org.eclipse.jetty</groupId>
-                <artifactId>jetty-annotations</artifactId>
+                <groupId>org.eclipse.jetty.ee10</groupId>
+                <artifactId>jetty-ee10-annotations</artifactId>
                 <version>${jetty.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.eclipse.jetty</groupId>
-                <artifactId>apache-jsp</artifactId>
+                <groupId>org.eclipse.jetty.ee10</groupId>
+                <artifactId>jetty-ee10-apache-jsp</artifactId>
                 <version>${jetty.version}</version>
                 <exclusions>
                     <exclusion>
@@ -194,17 +194,17 @@
             <dependency>
                 <groupId>org.eclipse.jetty.websocket</groupId>
                 <artifactId>websocket-api</artifactId>
-                <version>${jetty.version}</version>
+                <version>9.4.54.v20240208</version>
             </dependency>
             <dependency>
                 <groupId>org.eclipse.jetty.websocket</groupId>
                 <artifactId>websocket-common</artifactId>
-                <version>${jetty.version}</version>
+                <version>9.4.54.v20240208</version>
             </dependency>
             <dependency>
                 <groupId>org.eclipse.jetty</groupId>
                 <artifactId>jetty-continuation</artifactId>
-                <version>${jetty.version}</version>
+                <version>9.4.54.v20240208</version>
             </dependency>
             <dependency>
                 <groupId>org.eclipse.jetty</groupId>
@@ -222,8 +222,8 @@
                 <version>${jetty.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.eclipse.jetty</groupId>
-                <artifactId>jetty-plus</artifactId>
+                <groupId>org.eclipse.jetty.ee10</groupId>
+                <artifactId>jetty-ee10-plus</artifactId>
                 <version>${jetty.version}</version>
             </dependency>
             <dependency>
@@ -242,8 +242,8 @@
                 <version>${jetty.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.eclipse.jetty</groupId>
-                <artifactId>jetty-servlet</artifactId>
+                <groupId>org.eclipse.jetty.ee10</groupId>
+                <artifactId>jetty-ee10-servlet</artifactId>
                 <version>${jetty.version}</version>
             </dependency>
             <dependency>
@@ -251,6 +251,26 @@
                 <artifactId>jetty-xml</artifactId>
                 <version>${jetty.version}</version>
             </dependency>
+            <dependency>
+                <groupId>org.eclipse.jetty</groupId>
+                <artifactId>jetty-session</artifactId>
+                <version>${jetty.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.eclipse.jetty</groupId>
+                <artifactId>jetty-slf4j-impl</artifactId>
+                <version>${jetty.version}</version>
+            </dependency>
+
+
+            <!-- https://mvnrepository.com/artifact/com.google.common/google-collect -->
+            <dependency>
+                <groupId>com.google.common</groupId>
+                <artifactId>google-collect</artifactId>
+                <version>1.0</version>
+            </dependency>
+
+
         </dependencies>
     </dependencyManagement>
 </project>

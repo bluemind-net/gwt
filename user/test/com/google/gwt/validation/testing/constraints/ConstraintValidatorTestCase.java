@@ -20,11 +20,11 @@ import junit.framework.TestCase;
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Field;
 
-import javax.validation.ConstraintValidator;
-import javax.validation.ConstraintValidatorContext;
+import jakarta.validation.ConstraintValidator;
+import jakarta.validation.ConstraintValidatorContext;
 
 /**
- * TestCase for {@link javax.validation.ConstraintValidator}s.
+ * TestCase for {@link jakarta.validation.ConstraintValidator}s.
  * <p>
  * Subclasses must :
  * <ul>

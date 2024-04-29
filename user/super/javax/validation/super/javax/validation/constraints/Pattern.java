@@ -14,7 +14,7 @@
  * language governing permissions and limitations under the License.
  */
 // Modified by Google.
-package javax.validation.constraints;
+package jakarta.validation.constraints;
 
 import static java.lang.annotation.ElementType.ANNOTATION_TYPE;
 import static java.lang.annotation.ElementType.CONSTRUCTOR;
@@ -27,8 +27,8 @@ import java.lang.annotation.Documented;
 import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
 
-import javax.validation.Constraint;
-import javax.validation.Payload;
+import jakarta.validation.Constraint;
+import jakarta.validation.Payload;
 
 /**
  * The annotated String must match the following regular expression. The regular
@@ -62,7 +62,7 @@ public @interface Pattern {
   /**
    * @return The error message template.
    */
-  String message() default "{javax.validation.constraints.Pattern.message}";
+  String message() default "{jakarta.validation.constraints.Pattern.message}";
 
   /**
    * @return The groups the constraint belongs to.

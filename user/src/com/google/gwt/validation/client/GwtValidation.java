@@ -22,10 +22,10 @@ import java.lang.annotation.Documented;
 import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
 
-import javax.validation.groups.Default;
+import jakarta.validation.groups.Default;
 
 /**
- * Annotates a {@code javax.validation.Validator} explicitly listing the classes
+ * Annotates a {@code jakarta.validation.Validator} explicitly listing the classes
  * that can be validated in GWT.
  * <p>
  * Define the Validator you want, explicitly listing the classes and groups 
@@ -34,7 +34,7 @@ import javax.validation.groups.Default;
  * <pre>
  * &#064;GwtValidation(value = {MyBean.class, MyOther.class},
  *     groups = {Default.class, OtherGroup.class})
- * public interface MyValidator extends javax.validation.Validator {
+ * public interface MyValidator extends jakarta.validation.Validator {
  * }
  * </pre>
  * Create and use the validator.
@@ -67,7 +67,7 @@ import javax.validation.groups.Default;
  * }
  * </pre>
  * 
- * And then create your {@link javax.validation.ValidatorFactory
+ * And then create your {@link jakarta.validation.ValidatorFactory
  * ValidatorFactory} using
  * 
  * <pre>

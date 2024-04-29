@@ -32,8 +32,8 @@ import junit.framework.TestCase;
 
 import java.util.regex.Pattern;
 
-import javax.validation.ValidationException;
-import javax.validation.Validator;
+import jakarta.validation.ValidationException;
+import jakarta.validation.Validator;
 
 /**
  * Abstract TestCase for TCK tests that are expected to fail to compile.

@@ -19,9 +19,9 @@ import com.google.gwt.validation.client.ValidationClientGwtTestCase;
 
 import java.util.Set;
 
-import javax.validation.ConstraintViolation;
-import javax.validation.constraints.Pattern;
-import javax.validation.constraints.Pattern.Flag;
+import jakarta.validation.ConstraintViolation;
+import jakarta.validation.constraints.Pattern;
+import jakarta.validation.constraints.Pattern.Flag;
 
 /**
  * Tests for {@link PatternValidator}.

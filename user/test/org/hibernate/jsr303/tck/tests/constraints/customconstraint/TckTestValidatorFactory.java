@@ -23,7 +23,7 @@ import com.google.gwt.validation.client.impl.AbstractGwtValidator;
 import org.hibernate.jsr303.tck.tests.constraints.customconstraint.CustomConstraintValidatorTest.Freezer;
 import org.hibernate.jsr303.tck.tests.constraints.customconstraint.CustomConstraintValidatorTest.Shoe;
 
-import javax.validation.Validator;
+import jakarta.validation.Validator;
 
 /**
  * {@link AbstractGwtValidatorFactory} implementation that uses

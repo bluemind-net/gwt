@@ -25,10 +25,10 @@ import org.hibernate.jsr303.tck.util.TestUtil;
 import java.util.Date;
 import java.util.Set;
 
-import javax.validation.ConstraintViolation;
-import javax.validation.Validator;
-import javax.validation.constraints.Future;
-import javax.validation.constraints.Past;
+import jakarta.validation.ConstraintViolation;
+import jakarta.validation.Validator;
+import jakarta.validation.constraints.Future;
+import jakarta.validation.constraints.Past;
 
 /**
  * Test wrapper for {@link BuiltinConstraintsTest}.

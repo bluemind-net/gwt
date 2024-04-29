@@ -22,7 +22,7 @@ import com.google.gwt.regexp.shared.RegExp;
 
 import java.util.Map;
 
-import javax.validation.MessageInterpolator;
+import jakarta.validation.MessageInterpolator;
 
 /**
  * Base GWT {@link MessageInterpolator}.

@@ -25,8 +25,11 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-import javax.validation.metadata.ConstraintDescriptor;
-import javax.validation.metadata.PropertyDescriptor;
+import jakarta.validation.metadata.ConstraintDescriptor;
+import jakarta.validation.metadata.PropertyDescriptor;
+import jakarta.validation.metadata.MethodType;
+import jakarta.validation.metadata.MethodDescriptor;
+import jakarta.validation.metadata.ConstructorDescriptor;
 
 /**
  * Abstract BeanDescriptor for use by generated {@link GwtBeanDescriptor}.
@@ -149,6 +152,26 @@ public final class GwtBeanDescriptorImpl<T> implements GwtBeanDescriptor<T> {
   @Override
   public boolean isBeanConstrained() {
     return isBeanConstrained;
+  }
+
+  @Override
+  public Set<MethodDescriptor> getConstrainedMethods(MethodType methodType, MethodType... methodTypes) {
+    return null;
+  }
+
+  @Override
+  public Set<ConstructorDescriptor>	getConstrainedConstructors() {
+    return null;
+  }
+
+  @Override
+  public ConstructorDescriptor	getConstraintsForConstructor(Class<?>... parameterTypes) {
+    return null;
+  }
+  
+  @Override
+  public MethodDescriptor	getConstraintsForMethod(String methodName, Class<?>... parameterTypes) {
+    return null;
   }
 
   @Override

@@ -19,7 +19,7 @@ import com.google.gwt.validation.client.constraints.SizeValidatorForArrayOfInt;
 
 import java.util.Date;
 
-import javax.validation.constraints.Size;
+import jakarta.validation.constraints.Size;
 
 /**
  * Tests for {@link SizeValidatorForArrayOfInt}.

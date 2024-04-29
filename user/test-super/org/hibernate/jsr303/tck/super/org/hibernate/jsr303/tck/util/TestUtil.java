@@ -29,18 +29,18 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
-import javax.validation.Configuration;
-import javax.validation.ConstraintViolation;
-import javax.validation.MessageInterpolator;
-import javax.validation.Path;
-import javax.validation.Validator;
-import javax.validation.ValidatorFactory;
-import javax.validation.Validation;
-import javax.validation.bootstrap.GenericBootstrap;
-import javax.validation.metadata.ConstraintDescriptor;
-import javax.validation.metadata.ElementDescriptor;
-import javax.validation.metadata.PropertyDescriptor;
-import javax.validation.spi.ValidationProvider;
+import jakarta.validation.Configuration;
+import jakarta.validation.ConstraintViolation;
+import jakarta.validation.MessageInterpolator;
+import jakarta.validation.Path;
+import jakarta.validation.Validator;
+import jakarta.validation.ValidatorFactory;
+import jakarta.validation.Validation;
+import jakarta.validation.bootstrap.GenericBootstrap;
+import jakarta.validation.metadata.ConstraintDescriptor;
+import jakarta.validation.metadata.ElementDescriptor;
+import jakarta.validation.metadata.PropertyDescriptor;
+import jakarta.validation.spi.ValidationProvider;
 
 /**
  * Modified by Google.

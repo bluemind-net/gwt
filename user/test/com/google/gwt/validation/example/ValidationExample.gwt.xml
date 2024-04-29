@@ -22,6 +22,6 @@
   </source>
   <replace-with
     class="com.google.gwt.validation.example.client.ExampleValidatorFactory">
-    <when-type-is class="javax.validation.ValidatorFactory" />
+    <when-type-is class="jakarta.validation.ValidatorFactory" />
 </replace-with>
 </module>

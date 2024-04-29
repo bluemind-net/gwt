@@ -25,7 +25,7 @@ import org.hibernate.jsr303.tck.tests.constraints.validatorresolution.ValidatorR
 import org.hibernate.jsr303.tck.tests.constraints.validatorresolution.ValidatorResolutionTest.SubClassAHolder;
 import org.hibernate.jsr303.tck.tests.constraints.validatorresolution.ValidatorResolutionTest.SubClassBHolder;
 
-import javax.validation.Validator;
+import jakarta.validation.Validator;
 
 /**
  * {@link AbstractGwtValidatorFactory} implementation that uses

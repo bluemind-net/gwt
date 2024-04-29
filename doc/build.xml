@@ -26,10 +26,11 @@
     <pathelement location="${gwt.dev.jar}" />
     <pathelement location="${gwt.user.jar}" />
     <pathelement location="${gwt.tools.lib}/junit/junit-4.8.2.jar" />
-    <pathelement location="${gwt.tools.lib}/javax/validation/validation-api-1.0.0.GA.jar" />
-    <pathelement location="${gwt.tools.lib}/javax/validation/validation-api-1.0.0.GA-sources.jar" />
+    <pathelement location="${gwt.tools.lib}/jakarta-validation/jakarta.validation-api-3.0.2/jakarta.validation-api-3.0.2.jar" />
+    <pathelement location="${gwt.tools.lib}/jakarta-validation/jakarta.validation-api-3.0.2/jakarta.validation-api-3.0.2-sources.jar" />
     <pathelement location="${gwt.tools.lib}/selenium/selenium-java-client-driver.jar" />
-    <pathelement location="${gwt.tools.lib}/jakarta-servlet/jakarta.servlet-api-5.0.0/jakarta.servlet-api-5.0.0.jar" />
+    <pathelement location="${gwt.tools.lib}/jakarta-servlet/jakarta.servlet-api-6.0.0/jakarta.servlet-api-6.0.0.jar" />
+    <pathelement location="${gwt.tools.lib}/jakarta-validation/jakarta.validation-api-3.0.2/jakarta.validation-api-3.0.2.jar"/>
   </path>
 
   <path id="DOC_PATH">

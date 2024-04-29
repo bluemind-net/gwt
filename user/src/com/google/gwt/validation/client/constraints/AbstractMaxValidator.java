@@ -18,8 +18,8 @@ package com.google.gwt.validation.client.constraints;
 import java.math.BigDecimal;
 import java.math.BigInteger;
 
-import javax.validation.ConstraintValidator;
-import javax.validation.constraints.Max;
+import jakarta.validation.ConstraintValidator;
+import jakarta.validation.constraints.Max;
 
 /**
  * Abstract {@link Max} constraint validator implementation for a <code>T</code>.

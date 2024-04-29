@@ -20,7 +20,7 @@ import junit.framework.TestCase;
 import java.util.HashSet;
 import java.util.Set;
 
-import javax.validation.groups.Default;
+import jakarta.validation.groups.Default;
 
 /**
  * Test case for {@link ValidationGroupsMetadata}.

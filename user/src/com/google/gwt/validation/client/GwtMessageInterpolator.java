@@ -20,13 +20,13 @@ import com.google.gwt.core.client.GWT;
 import java.util.Locale;
 
 /**
- * Simple GWT {@link javax.validation.MessageInterpolator}.
+ * Simple GWT {@link jakarta.validation.MessageInterpolator}.
  */
 public final class GwtMessageInterpolator extends BaseMessageInterpolator {
   // This class only has the parts the need to overridden for GWT
 
   /**
-   * Creates a {@link javax.validation.MessageInterpolator MessageInterpolator}
+   * Creates a {@link jakarta.validation.MessageInterpolator MessageInterpolator}
    * MessageInterpolator that uses the default
    * {@link UserValidationMessagesResolver}.
    */
@@ -36,7 +36,7 @@ public final class GwtMessageInterpolator extends BaseMessageInterpolator {
   }
 
   /**
-   * Creates a {@link javax.validation.MessageInterpolator MessageInterpolator}
+   * Creates a {@link jakarta.validation.MessageInterpolator MessageInterpolator}
    * using the supplied{@link UserValidationMessagesResolver}.
    * 
    * @param userValidationMessagesResolver

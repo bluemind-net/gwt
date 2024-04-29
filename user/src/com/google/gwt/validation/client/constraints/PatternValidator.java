@@ -18,10 +18,10 @@ package com.google.gwt.validation.client.constraints;
 import com.google.gwt.regexp.shared.MatchResult;
 import com.google.gwt.regexp.shared.RegExp;
 
-import javax.validation.ConstraintValidator;
-import javax.validation.ConstraintValidatorContext;
-import javax.validation.constraints.Pattern;
-import javax.validation.constraints.Pattern.Flag;
+import jakarta.validation.ConstraintValidator;
+import jakarta.validation.ConstraintValidatorContext;
+import jakarta.validation.constraints.Pattern;
+import jakarta.validation.constraints.Pattern.Flag;
 
 /**
  * {@link Pattern} constraint validator implementation.

@@ -18,16 +18,16 @@ package com.google.gwt.validation.client;
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.i18n.shared.GwtLocale;
 
-import javax.validation.MessageInterpolator.Context;
+import jakarta.validation.MessageInterpolator.Context;
 
 /**
- * Simple GWT {@link javax.validation.MessageInterpolator}.
+ * Simple GWT {@link jakarta.validation.MessageInterpolator}.
  */
 public final class GwtMessageInterpolator extends BaseMessageInterpolator {
   // This class only has the parts the need to overridden for GWT
 
   /**
-   * Creates a {@link javax.validation.MessageInterpolator MessageInterpolator}
+   * Creates a {@link jakarta.validation.MessageInterpolator MessageInterpolator}
    * MessageInterpolator that uses the default
    * {@link UserValidationMessagesResolver}.
    */
@@ -37,7 +37,7 @@ public final class GwtMessageInterpolator extends BaseMessageInterpolator {
   }
 
   /**
-   * Creates a {@link javax.validation.MessageInterpolator MessageInterpolator}
+   * Creates a {@link jakarta.validation.MessageInterpolator MessageInterpolator}
    * using the supplie{@link UserValidationMessagesResolver}.
    *
    * @param userValidationMessagesResolver

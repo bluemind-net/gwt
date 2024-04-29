@@ -19,7 +19,7 @@ import com.google.gwt.validation.client.constraints.PastValidatorForDate;
 
 import java.util.Date;
 
-import javax.validation.constraints.Past;
+import jakarta.validation.constraints.Past;
 
 /**
  * Tests for {@link PastValidatorForDate}.

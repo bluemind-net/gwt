@@ -27,10 +27,10 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
-import javax.validation.groups.Default;
-import javax.validation.metadata.ConstraintDescriptor;
-import javax.validation.metadata.ElementDescriptor.ConstraintFinder;
-import javax.validation.metadata.Scope;
+import jakarta.validation.groups.Default;
+import jakarta.validation.metadata.ConstraintDescriptor;
+import jakarta.validation.metadata.ElementDescriptor.ConstraintFinder;
+import jakarta.validation.metadata.Scope;
 
 /**
  * Finds constraints declared on an element using specified criteria.

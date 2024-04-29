@@ -17,6 +17,7 @@ package com.google.gwt.dev.shell.jetty;
 
 import com.google.gwt.core.ext.TreeLogger;
 import com.google.gwt.dev.util.Util;
+import com.google.gwt.dev.shell.StaticResourceServer;
 
 import java.io.File;
 import java.net.URL;
@@ -54,7 +55,7 @@ public class SslConfiguration {
       }
       if ("ssl".equals(tag)) {
         useSsl = true;
-        URL keyStoreUrl = JettyLauncher.class.getResource("localhost.keystore");
+        URL keyStoreUrl = StaticResourceServer.class.getResource("localhost.keystore");
         if (keyStoreUrl == null) {
           logger.log(TreeLogger.ERROR, "Default GWT keystore not found");
           return Optional.empty();
@@ -86,7 +87,7 @@ public class SslConfiguration {
         }
       } else {
         logger.log(TreeLogger.ERROR, "Unexpected argument to "
-                + JettyLauncher.class.getSimpleName() + ": " + arg);
+                + StaticResourceServer.class.getSimpleName() + ": " + arg);
         return Optional.empty();
       }
     }

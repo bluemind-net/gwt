@@ -17,10 +17,10 @@ package com.google.gwt.validation.client.constraints;
 
 import java.math.BigDecimal;
 
-import javax.validation.ConstraintValidatorContext;
+import jakarta.validation.ConstraintValidatorContext;
 
 /**
- * {@link javax.validation.constraints.Digits} constraint validator
+ * {@link jakarta.validation.constraints.Digits} constraint validator
  * implementation for a {@link String}.
  */
 public class DigitsValidatorForString extends

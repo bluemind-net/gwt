@@ -17,7 +17,7 @@ package com.google.gwt.sample.validation.shared;
 
 import com.google.gwt.user.client.rpc.IsSerializable;
 
-import javax.validation.constraints.NotNull;
+import jakarta.validation.constraints.NotNull;
 
 /**
  * Sample address for validation

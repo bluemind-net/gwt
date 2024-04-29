@@ -37,10 +37,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import javax.validation.ConstraintViolation;
-import javax.validation.GroupSequence;
-import javax.validation.groups.Default;
-import javax.validation.metadata.BeanDescriptor;
+import jakarta.validation.ConstraintViolation;
+import jakarta.validation.GroupSequence;
+import jakarta.validation.groups.Default;
+import jakarta.validation.metadata.BeanDescriptor;
 
 /**
  * Creates the validator for the given input class.

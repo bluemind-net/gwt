@@ -17,7 +17,7 @@ package org.hibernate.jsr303.tck.tests.constraints.customconstraint;
 
 import com.google.gwt.junit.client.GWTTestCase;
 
-import javax.validation.ValidationException;
+import jakarta.validation.ValidationException;
 
 /**
  * Test wrapper for {@link CustomConstraintValidatorTest}.

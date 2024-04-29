@@ -22,7 +22,7 @@ import java.util.Collection;
 import java.util.Date;
 import java.util.List;
 
-import javax.validation.constraints.Size;
+import jakarta.validation.constraints.Size;
 
 /**
  * Tests for {@link SizeValidatorForCollection}.

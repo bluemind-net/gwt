@@ -20,11 +20,11 @@ import com.google.gwt.validation.client.impl.metadata.ValidationGroupsMetadata;
 
 import java.util.Set;
 
-import javax.validation.ConstraintViolation;
-import javax.validation.ValidationException;
+import jakarta.validation.ConstraintViolation;
+import jakarta.validation.ValidationException;
 
 /**
- * Defines GWT version of {@link javax.validation.Validator}. This used by
+ * Defines GWT version of {@link jakarta.validation.Validator}. This used by
  * generate a specific Validator for a given class G.
  * 
  * @param <G> the type of bean for this validator
@@ -106,7 +106,7 @@ public interface GwtSpecificValidator<G> {
    * @param context The gwt validation context
    * @param object object to validate
    * @param groups group or list of groups targeted for validation (default to
-   *          {@link javax.validation.groups.Default})
+   *          {@link jakarta.validation.groups.Default})
    *
    * @return constraint violations or an empty Set if none
    *
@@ -141,7 +141,7 @@ public interface GwtSpecificValidator<G> {
    * @param object object to validate
    * @param propertyName property to validate (ie field and getter constraints)
    * @param groups group or list of groups targeted for validation (default to
-   *          {@link javax.validation.groups.Default})
+   *          {@link jakarta.validation.groups.Default})
    *
    * @return constraint violations or an empty Set if none
    *
@@ -185,7 +185,7 @@ public interface GwtSpecificValidator<G> {
    * @param propertyName property to validate
    * @param value property value to validate
    * @param groups group or list of groups targeted for validation (default to
-   *          {@link javax.validation.groups.Default})
+   *          {@link jakarta.validation.groups.Default})
    *
    * @return constraint violations or an empty Set if none
    *

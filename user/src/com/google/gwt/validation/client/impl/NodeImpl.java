@@ -17,7 +17,8 @@ package com.google.gwt.validation.client.impl;
 
 import java.io.Serializable;
 
-import javax.validation.Path.Node;
+import jakarta.validation.Path.Node;
+import jakarta.validation.ElementKind;
 
 /**
  * An immutable GWT safe implementation of {@link Node}.
@@ -73,6 +74,11 @@ final class NodeImpl implements Node, Serializable {
   }
 
   @Override
+  public <T extends Node> T as(Class<T> nodeType) {
+    return null;
+  }
+
+  @Override
   public Integer getIndex() {
     return index;
   }
@@ -119,5 +125,10 @@ final class NodeImpl implements Node, Serializable {
       sb.append(']');
     }
     return sb.toString();
+  }
+
+  @Override
+  public ElementKind getKind() {
+    return null;
   }
 }

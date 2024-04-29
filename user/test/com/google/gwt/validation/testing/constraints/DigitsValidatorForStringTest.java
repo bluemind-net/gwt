@@ -17,7 +17,7 @@ package com.google.gwt.validation.testing.constraints;
 
 import com.google.gwt.validation.client.constraints.DigitsValidatorForString;
 
-import javax.validation.constraints.Digits;
+import jakarta.validation.constraints.Digits;
 
 /**
  * Tests for {@link DigitsValidatorForString}.

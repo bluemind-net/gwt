@@ -7,7 +7,7 @@ import com.google.gwt.validation.client.impl.AbstractGwtValidator;
 
 import org.hibernate.jsr303.tck.tests.constraints.constraintcomposition.ConstraintCompositionTest.DummyEntityWithZipCode;
 
-import javax.validation.Validator;
+import jakarta.validation.Validator;
 
 /**
  * {@link AbstractGwtValidatorFactory} implementation that uses

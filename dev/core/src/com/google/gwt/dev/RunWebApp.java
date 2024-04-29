@@ -19,7 +19,7 @@ import com.google.gwt.core.ext.ServletContainer;
 import com.google.gwt.core.ext.TreeLogger;
 import com.google.gwt.dev.DevModeBase.OptionPort;
 import com.google.gwt.dev.DevModeBase.OptionStartupURLs;
-import com.google.gwt.dev.shell.jetty.JettyLauncher;
+import com.google.gwt.dev.shell.StaticResourceServer;
 import com.google.gwt.dev.util.BrowserLauncher;
 import com.google.gwt.dev.util.log.PrintWriterTreeLogger;
 import com.google.gwt.util.tools.ArgHandlerExtra;
@@ -133,7 +133,7 @@ public class RunWebApp {
     logger.setMaxDetail(TreeLogger.WARN);
     int port = options.getPort();
     try {
-      ServletContainer scl = new JettyLauncher().start(logger, port, warFile);
+      ServletContainer scl = new StaticResourceServer().start(logger, port, warFile);
       port = scl.getPort();
     } catch (Exception e) {
       System.err.println("Unable to start Jetty server");

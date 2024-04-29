@@ -16,8 +16,7 @@
 package com.google.gwt.validation.client.impl;
 
 import com.google.gwt.validation.client.spi.GwtValidationProvider;
-
-import javax.validation.spi.BootstrapState;
+import jakarta.validation.spi.BootstrapState;
 
 /**
  * Extends {@link BaseGwtConfiguration} with just the parts that are not GWT

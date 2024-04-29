@@ -17,7 +17,7 @@ package com.google.gwt.validation.testing.constraints;
 
 import com.google.gwt.validation.client.constraints.NullValidator;
 
-import javax.validation.constraints.Null;
+import jakarta.validation.constraints.Null;
 
 /**
  * Tests for {@link NullValidator}.

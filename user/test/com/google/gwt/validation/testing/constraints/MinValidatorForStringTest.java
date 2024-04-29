@@ -17,7 +17,7 @@ package com.google.gwt.validation.testing.constraints;
 
 import com.google.gwt.validation.client.constraints.MinValidatorForString;
 
-import javax.validation.constraints.Min;
+import jakarta.validation.constraints.Min;
 
 /**
  * Tests for {@link MinValidatorForString}.

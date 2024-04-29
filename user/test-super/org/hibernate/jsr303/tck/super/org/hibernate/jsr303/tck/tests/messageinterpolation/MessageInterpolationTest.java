@@ -24,14 +24,14 @@ import com.google.gwt.i18n.shared.GwtLocale;
 import com.google.gwt.i18n.shared.GwtLocaleFactory;
 
 import java.util.Set;
-import javax.validation.ConstraintViolation;
-import javax.validation.MessageInterpolator;
-import javax.validation.Validator;
-import javax.validation.constraints.Max;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Past;
-import javax.validation.constraints.Size;
-import javax.validation.metadata.ConstraintDescriptor;
+import jakarta.validation.ConstraintViolation;
+import jakarta.validation.MessageInterpolator;
+import jakarta.validation.Validator;
+import jakarta.validation.constraints.Max;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Past;
+import jakarta.validation.constraints.Size;
+import jakarta.validation.metadata.ConstraintDescriptor;
 
 import org.jboss.test.audit.annotations.SpecAssertion;
 import org.jboss.test.audit.annotations.SpecAssertions;
@@ -194,7 +194,7 @@ public class MessageInterpolationTest extends AbstractTest {
     ConstraintDescriptor<?> descriptor = getDescriptorFor( Person.class, "birthday" );
     MessageInterpolator.Context context = new TestContext( descriptor );
 
-    String key = "{javax.validation.constraints.Past.message}"; // Past is a built-in constraint so the provider must provide a default message
+    String key = "{jakarta.validation.constraints.Past.message}"; // Past is a built-in constraint so the provider must provide a default message
     String actual = interpolator.interpolate( key, context );
     assertFalse(
         key.equals( actual ),

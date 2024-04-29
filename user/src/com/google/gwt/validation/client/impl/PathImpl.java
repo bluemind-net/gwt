@@ -20,7 +20,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import javax.validation.Path;
+import jakarta.validation.Path;
 
 /**
  * An immutable GWT safe implementation of {@link Path}.
@@ -33,7 +33,7 @@ public final class PathImpl implements Path, Serializable {
 
   /**
    * Creates a new path containing only the root (<code>null</code>)
-   * {@link javax.validation.Path.Node Node}.
+   * {@link jakarta.validation.Path.Node Node}.
    */
   public PathImpl() {
     nodes.add(NodeImpl.ROOT_NODE);

@@ -22,8 +22,8 @@ import com.google.gwt.validation.client.impl.AbstractGwtValidator;
 
 import org.hibernate.jsr303.tck.tests.metadata.Person.PersonValidation;
 
-import javax.validation.Validator;
-import javax.validation.groups.Default;
+import jakarta.validation.Validator;
+import jakarta.validation.groups.Default;
 
 /**
  * Test {@link AbstractGwtValidatorFactory} for

@@ -22,7 +22,7 @@ import com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException;
 import com.google.gwt.user.client.rpc.ManuallySerializedClass;
 import com.google.gwt.user.client.rpc.ManuallySerializedImmutableClass;
 
-import javax.servlet.ServletContext;
+import jakarta.servlet.ServletContext;
 
 /**
  * Servlet used by the

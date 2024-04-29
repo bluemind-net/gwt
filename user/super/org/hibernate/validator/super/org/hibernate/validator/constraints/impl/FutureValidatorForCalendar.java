@@ -17,7 +17,7 @@ package org.hibernate.validator.constraints.impl;
 
 import com.google.gwt.validation.client.constraints.NotGwtCompatibleValidator;
 
-import javax.validation.constraints.Future;
+import jakarta.validation.constraints.Future;
 
 /**
  * This Validator is not GWT complatible.

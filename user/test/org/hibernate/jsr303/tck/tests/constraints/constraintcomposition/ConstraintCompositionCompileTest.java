@@ -22,8 +22,8 @@ import org.hibernate.jsr303.tck.util.TckCompileTestCase;
 
 import java.util.regex.Pattern;
 
-import javax.validation.ConstraintDefinitionException;
-import javax.validation.UnexpectedTypeException;
+import jakarta.validation.ConstraintDefinitionException;
+import jakarta.validation.UnexpectedTypeException;
 
 /**
  * Test wrapper for {@link ConstraintCompositionTest} tests that are meant to

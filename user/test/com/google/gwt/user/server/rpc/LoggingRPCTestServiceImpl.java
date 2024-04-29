@@ -29,7 +29,7 @@ import java.net.URL;
 import java.util.logging.LogRecord;
 import java.util.logging.Logger;
 
-import javax.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletRequest;
 
 /**
  * Remote service implementation for serialization of GWT core.java.util.logging emulations.

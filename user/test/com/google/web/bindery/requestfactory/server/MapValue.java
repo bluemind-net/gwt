@@ -18,7 +18,7 @@ package com.google.web.bindery.requestfactory.server;
 import java.util.HashMap;
 import java.util.Map;
 
-import javax.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletRequest;
 
 /**
  * Domain object for MapValueProxy used to test entities as map values

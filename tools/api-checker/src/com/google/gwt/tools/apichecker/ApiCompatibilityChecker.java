@@ -830,7 +830,7 @@ public class ApiCompatibilityChecker extends ToolBase {
 
       @Override
       public String getPurpose() {
-        return "The location of the javax.validation sources";
+        return "The location of the jakarta.validation sources";
       }
 
       @Override
@@ -981,7 +981,7 @@ public class ApiCompatibilityChecker extends ToolBase {
   }
 
   /**
-   * This is a hack to make the ApiChecker able to find the javax.validation
+   * This is a hack to make the ApiChecker able to find the jakarta.validation
    * sources, which we include through an external jar file.
    */
   private Set<Resource> getJavaxValidationCompilationUnits(TreeLogger logger)

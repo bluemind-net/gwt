@@ -17,7 +17,7 @@ package com.google.gwt.validation.client.impl;
 
 import junit.framework.TestCase;
 
-import javax.validation.ConstraintViolation;
+import jakarta.validation.ConstraintViolation;
 
 /**
  * Tests for {@link ConstraintViolationImpl}.

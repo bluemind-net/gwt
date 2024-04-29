@@ -19,7 +19,7 @@ import com.google.gwt.junit.client.GWTTestCase;
 
 import org.hibernate.jsr303.tck.util.client.NonTckTest;
 
-import javax.validation.GroupDefinitionException;
+import jakarta.validation.GroupDefinitionException;
 
 /**
  * Test wrapper for {@link SequenceResolutionTest}.

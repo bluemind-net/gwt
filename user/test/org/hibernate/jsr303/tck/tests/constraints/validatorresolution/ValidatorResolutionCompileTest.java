@@ -23,7 +23,7 @@ import org.hibernate.jsr303.tck.util.TckCompileTestCase;
 
 import java.util.regex.Pattern;
 
-import javax.validation.ValidationException;
+import jakarta.validation.ValidationException;
 
 /**
  * Wraps {@link ValidatorResolutionTest} .

@@ -20,7 +20,7 @@ import com.google.web.bindery.event.shared.UmbrellaException;
 
 import java.util.Set;
 
-import javax.validation.ConstraintViolation;
+import jakarta.validation.ConstraintViolation;
 
 /**
  * A simple unit test of FanoutReceiver.

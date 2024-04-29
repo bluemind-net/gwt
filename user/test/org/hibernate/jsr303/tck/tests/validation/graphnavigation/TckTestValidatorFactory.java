@@ -23,8 +23,8 @@ import com.google.gwt.validation.client.impl.AbstractGwtValidator;
 import org.hibernate.jsr303.tck.tests.validation.graphnavigation.Parent.ChildFirst;
 import org.hibernate.jsr303.tck.tests.validation.graphnavigation.Parent.ParentSecond;
 
-import javax.validation.Validator;
-import javax.validation.groups.Default;
+import jakarta.validation.Validator;
+import jakarta.validation.groups.Default;
 
 /**
  * {@link AbstractGwtValidatorFactory} implementation that uses

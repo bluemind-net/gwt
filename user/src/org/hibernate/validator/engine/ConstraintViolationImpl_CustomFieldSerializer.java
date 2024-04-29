@@ -19,11 +19,13 @@ import com.google.gwt.user.client.rpc.CustomFieldSerializer;
 import com.google.gwt.user.client.rpc.SerializationException;
 import com.google.gwt.user.client.rpc.SerializationStreamReader;
 import com.google.gwt.user.client.rpc.SerializationStreamWriter;
+import com.google.gwt.validation.client.impl.ConstraintViolationImpl;
 
 import java.lang.annotation.ElementType;
 
-import javax.validation.Path;
-import javax.validation.metadata.ConstraintDescriptor;
+import jakarta.validation.Path;
+import jakarta.validation.ConstraintViolation;
+import jakarta.validation.metadata.ConstraintDescriptor;
 
 /**
  * Custom Serializer for {@link ConstraintViolationImpl}.
@@ -50,9 +52,9 @@ public class ConstraintViolationImpl_CustomFieldSerializer extends
     Path propertyPath = (Path) streamReader.readObject();
     ConstraintDescriptor<?> constraintDescriptor = null;
     ElementType elementType = null;
-    return new ConstraintViolationImpl<Object>(messageTemplate,
-        interpolatedMessage, rootBeanClass, rootBean, leafBeanInstance, value,
-        propertyPath, constraintDescriptor, elementType);
+    return new ConstraintViolationImpl<Object>(interpolatedMessage, messageTemplate,
+        rootBean, rootBeanClass, leafBeanInstance, propertyPath, value,
+        elementType, constraintDescriptor);
   }
 
   /**

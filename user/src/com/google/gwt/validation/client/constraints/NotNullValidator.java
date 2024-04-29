@@ -15,9 +15,9 @@
  */
 package com.google.gwt.validation.client.constraints;
 
-import javax.validation.ConstraintValidator;
-import javax.validation.ConstraintValidatorContext;
-import javax.validation.constraints.NotNull;
+import jakarta.validation.ConstraintValidator;
+import jakarta.validation.ConstraintValidatorContext;
+import jakarta.validation.constraints.NotNull;
 
 /**
  * {@link NotNull} constraint validator implementation.

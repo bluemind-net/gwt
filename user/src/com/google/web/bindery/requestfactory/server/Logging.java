@@ -21,7 +21,7 @@ import com.google.gwt.logging.server.RemoteLoggingServiceUtil;
 import com.google.gwt.logging.server.RemoteLoggingServiceUtil.RemoteLoggingException;
 import com.google.gwt.user.client.rpc.RpcRequestBuilder;
 
-import javax.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletRequest;
 
 /**
  * Server-side object that handles log messages sent by

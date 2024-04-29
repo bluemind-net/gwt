@@ -17,7 +17,7 @@ package com.google.gwt.dev.shell.log;
 
 import com.google.gwt.dev.util.log.AbstractTreeLogger;
 
-import javax.servlet.ServletContext;
+import jakarta.servlet.ServletContext;
 
 /**
  * Tree logger that logs servlet context information.

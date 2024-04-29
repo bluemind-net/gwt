@@ -19,7 +19,7 @@ import com.google.gwt.validation.client.constraints.PatternValidator;
 
 import java.util.Date;
 
-import javax.validation.constraints.Pattern;
+import jakarta.validation.constraints.Pattern;
 
 /**
  * Tests for {@link PatternValidator}.

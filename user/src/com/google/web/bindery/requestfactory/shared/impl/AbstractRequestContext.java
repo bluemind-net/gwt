@@ -64,9 +64,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import javax.validation.ConstraintViolation;
-import javax.validation.Path;
-import javax.validation.metadata.ConstraintDescriptor;
+import jakarta.validation.ConstraintViolation;
+import jakarta.validation.Path;
+import jakarta.validation.metadata.ConstraintDescriptor;
 
 /**
  * Base implementations for RequestContext services.
@@ -438,22 +438,42 @@ public abstract class AbstractRequestContext implements RequestContext, EntityCo
       return null;
     }
 
+    @Override
+    public Object[]	getExecutableParameters() {
+      return null;
+    }
+    
+    @Override
+    public Object getExecutableReturnValue() {
+      return null;
+    }
+
+    @Override
+    public <BaseProxy> BaseProxy unwrap(Class<BaseProxy> type) {
+      return null;
+    }
+
+    @Override
     public Object getInvalidValue() {
       return null;
     }
 
+    @Override
     public Object getLeafBean() {
       return leafBean;
     }
 
+    @Override
     public String getMessage() {
       return message;
     }
 
+    @Override
     public String getMessageTemplate() {
       return messageTemplate;
     }
 
+    @Override
     public Path getPropertyPath() {
       return new Path() {
         public Iterator<Node> iterator() {
@@ -467,6 +487,7 @@ public abstract class AbstractRequestContext implements RequestContext, EntityCo
       };
     }
 
+    @Override
     public BaseProxy getRootBean() {
       return rootBean;
     }

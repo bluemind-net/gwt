@@ -17,7 +17,7 @@ package com.google.gwt.validation.client.impl;
 
 import junit.framework.TestCase;
 
-import javax.validation.Path.Node;
+import jakarta.validation.Path.Node;
 
 /**
  * Tests for {@link NodeImpl}.

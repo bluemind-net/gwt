@@ -18,8 +18,8 @@ package com.google.gwt.validation.example.client;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
-import javax.validation.ConstraintValidator;
-import javax.validation.ConstraintValidatorContext;
+import jakarta.validation.ConstraintValidator;
+import jakarta.validation.ConstraintValidatorContext;
 
 /**
  * Validates server-side constraints. Will not compile on GWT.

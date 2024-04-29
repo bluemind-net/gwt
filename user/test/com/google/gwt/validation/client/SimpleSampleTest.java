@@ -17,8 +17,8 @@ package com.google.gwt.validation.client;
 
 import com.google.gwt.validation.client.impl.ConstraintViolationImpl;
 
-import javax.validation.ConstraintViolation;
-import javax.validation.constraints.NotNull;
+import jakarta.validation.ConstraintViolation;
+import jakarta.validation.constraints.NotNull;
 
 /**
  * Tests for {@link SimpleSample}.

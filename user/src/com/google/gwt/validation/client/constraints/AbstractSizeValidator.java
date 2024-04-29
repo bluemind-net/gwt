@@ -15,8 +15,8 @@
  */
 package com.google.gwt.validation.client.constraints;
 
-import javax.validation.ConstraintValidator;
-import javax.validation.constraints.Size;
+import jakarta.validation.ConstraintValidator;
+import jakarta.validation.constraints.Size;
 
 /**
  * Abstract {@link Size} constraint validator implementation.

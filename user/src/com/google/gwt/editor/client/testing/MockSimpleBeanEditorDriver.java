@@ -23,7 +23,7 @@ import com.google.gwt.editor.client.SimpleBeanEditorDriver;
 import java.util.Collections;
 import java.util.List;
 
-import javax.validation.ConstraintViolation;
+import jakarta.validation.ConstraintViolation;
 
 /**
  * A no-op implementation of {@link SimpleBeanEditorDriver} that records its

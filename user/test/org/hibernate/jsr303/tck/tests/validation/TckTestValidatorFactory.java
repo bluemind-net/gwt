@@ -26,8 +26,8 @@ import org.hibernate.jsr303.tck.tests.validation.ValidateTest.Car;
 import org.hibernate.jsr303.tck.tests.validation.ValidateTest.First;
 import org.hibernate.jsr303.tck.tests.validation.ValidateTest.Second;
 
-import javax.validation.Validator;
-import javax.validation.groups.Default;
+import jakarta.validation.Validator;
+import jakarta.validation.groups.Default;
 
 /**
  * {@link AbstractGwtValidatorFactory} implementation that uses

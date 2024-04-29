@@ -15,10 +15,10 @@
  */
 package com.google.gwt.validation.client;
 
-import javax.validation.constraints.NotNull;
+import jakarta.validation.constraints.NotNull;
 
 /**
- * A simple sample class to test javax.validation.
+ * A simple sample class to test jakarta.validation.
  */
 public class SimpleSample {
   @NotNull

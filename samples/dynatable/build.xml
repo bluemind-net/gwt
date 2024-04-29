@@ -5,6 +5,6 @@
   <import file="../common.ant.xml" />
   <!-- these are after the common.ant.xml so they have gwt.tools etc -->
   <path id="sample.extraclasspath">
-    <pathelement location="${gwt.tools.lib}/javax/validation/validation-api-1.0.0.GA.jar" />
+    <pathelement location="${gwt.tools.lib}/jakarta-validation/jakarta.validation-api-3.0.2/jakarta.validation-api-3.0.2.jar" />
   </path>
 </project>

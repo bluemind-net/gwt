@@ -37,8 +37,8 @@
       <zipfileset file="${gwt.build.lib}/requestfactory*.jar" prefix="${project.distname}" />
 
       <!-- external libs -->
-      <zipfileset file="${gwt.tools}/lib/javax/validation/validation-api-1.0.0.GA.jar" prefix="${project.distname}" />
-      <zipfileset file="${gwt.tools}/lib/javax/validation/validation-api-1.0.0.GA-sources.jar" prefix="${project.distname}" />
+      <zipfileset file="${gwt.tools}/lib/jakarta-validation/jakarta.validation-api-3.0.2/jakarta.validation-api-3.0.2.jar" prefix="${project.distname}" />
+      <zipfileset file="${gwt.tools}/lib/jakarta-validation/jakarta.validation-api-3.0.2/jakarta.validation-api-3.0.2-sources.jar" prefix="${project.distname}" />
 
       <!-- raw files -->
       <zipfileset dir="${dist.resources}" prefix="${project.distname}" />

@@ -29,8 +29,8 @@ import org.hibernate.jsr303.tck.tests.constraints.groups.groupsequence.SequenceR
 import org.hibernate.jsr303.tck.tests.constraints.groups.groupsequence.SequenceResolutionTest.Second;
 import org.hibernate.jsr303.tck.tests.constraints.groups.groupsequence.SequenceResolutionTest.Third;
 
-import javax.validation.Validator;
-import javax.validation.groups.Default;
+import jakarta.validation.Validator;
+import jakarta.validation.groups.Default;
 
 /**
  * {@link AbstractGwtValidatorFactory} implementation that uses

@@ -43,7 +43,7 @@ import com.google.web.bindery.requestfactory.shared.RequestContext;
 
 import java.util.Set;
 
-import javax.validation.ConstraintViolation;
+import jakarta.validation.ConstraintViolation;
 
 /**
  * This class shows how the UI for editing a person is wired up to the

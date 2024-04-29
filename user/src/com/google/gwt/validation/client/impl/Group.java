@@ -15,7 +15,7 @@
  */
 package com.google.gwt.validation.client.impl;
 
-import javax.validation.groups.Default;
+import jakarta.validation.groups.Default;
 
 /**
  * Encapsulates a single validation group.

@@ -35,9 +35,9 @@ import java.util.concurrent.atomic.AtomicInteger;
 import java.util.logging.LogRecord;
 import java.util.logging.Logger;
 
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 
 /**
  * An RPC servlet that serves as a proxy to JUnitTestShell. Enables

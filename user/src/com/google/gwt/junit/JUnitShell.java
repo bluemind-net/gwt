@@ -35,7 +35,7 @@ import com.google.gwt.dev.javac.CompilationProblemReporter;
 import com.google.gwt.dev.javac.CompilationState;
 import com.google.gwt.dev.javac.CompilationUnit;
 import com.google.gwt.dev.jjs.JsOutputOption;
-import com.google.gwt.dev.shell.jetty.JettyLauncher;
+import com.google.gwt.dev.shell.StaticResourceServer;
 import com.google.gwt.dev.util.arg.ArgHandlerClosureFormattedOutput;
 import com.google.gwt.dev.util.arg.ArgHandlerDeployDir;
 import com.google.gwt.dev.util.arg.ArgHandlerDeprecatedDisableUpdateCheck;
@@ -79,8 +79,8 @@ import junit.framework.TestCase;
 import junit.framework.TestResult;
 
 import org.eclipse.jetty.server.Server;
-import org.eclipse.jetty.servlet.FilterHolder;
-import org.eclipse.jetty.webapp.WebAppContext;
+import org.eclipse.jetty.ee10.servlet.FilterHolder;
+import org.eclipse.jetty.ee10.webapp.WebAppContext;
 
 import java.io.File;
 import java.io.IOException;
@@ -100,15 +100,15 @@ import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import javax.servlet.DispatcherType;
-import javax.servlet.Filter;
-import javax.servlet.FilterChain;
-import javax.servlet.FilterConfig;
-import javax.servlet.Servlet;
-import javax.servlet.ServletException;
-import javax.servlet.ServletRequest;
-import javax.servlet.ServletResponse;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.DispatcherType;
+import jakarta.servlet.Filter;
+import jakarta.servlet.FilterChain;
+import jakarta.servlet.FilterConfig;
+import jakarta.servlet.Servlet;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.ServletRequest;
+import jakarta.servlet.ServletResponse;
+import jakarta.servlet.http.HttpServletResponse;
 
 /**
  * This class is responsible for hosting JUnit test case execution. There are
@@ -248,7 +248,7 @@ public class JUnitShell extends DevMode {
        * ----- Options from DevMode -------
        */
       // Hard code the server.
-      JettyLauncher.suppressDeprecationWarningForTests();
+      // StaticResourceServer.suppressDeprecationWarningForTests();
       options.setServletContainerLauncher(shell.new MyJettyLauncher());
       // DISABLE: ArgHandlerStartupURLs
       registerHandler(new ArgHandlerWarDir(options) {
@@ -555,41 +555,40 @@ public class JUnitShell extends DevMode {
     }
   }
 
-  private final class MyJettyLauncher extends JettyLauncher {
+  private final class MyJettyLauncher extends StaticResourceServer {
 
-    /**
-     * Adds in special JUnit stuff.
-     */
-    @Override
-    protected JettyServletContainer createServletContainer(TreeLogger logger,
-        File appRootDir, Server server, WebAppContext wac, int localPort) {
-      // Don't bother shutting down cleanly.
-      server.setStopAtShutdown(false);
-      // Save off the Context so we can add our own servlets later.
-      JUnitShell.this.wac = wac;
-      return super.createServletContainer(logger, appRootDir, server, wac,
-          localPort);
-    }
+    // /**
+    //  * Adds in special JUnit stuff.
+    //  */
+    // @Override
+    // protected JettyServletContainer createServletContainer(TreeLogger logger,
+    //     File appRootDir, Server server, WebAppContext wac, int localPort) {
+    //   // Don't bother shutting down cleanly.
+    //   server.setStopAtShutdown(false);
+    //   // Save off the Context so we can add our own servlets later.
+    //   JUnitShell.this.wac = wac;
+    //   return super.createServletContainer(logger, appRootDir, server, wac,
+    //       localPort);
+    // }
 
-    /**
-     * Ignore DevMode's normal WEB-INF classloader rules and just allow the
-     * system classloader to dominate. This makes JUnitHostImpl live in the
-     * right classloader (mine).
-     */
-    @Override
-    protected WebAppContext createWebAppContext(TreeLogger logger,
-        File appRootDir) {
-      return new WebAppContext(appRootDir.getAbsolutePath(), "/") {
-        {
-          // Prevent file locking on Windows; pick up file changes.
-          getInitParams().put(
-              "org.eclipse.jetty.servlet.Default.useFileMappedBuffer", "false");
+    // /**
+    //  * Ignore DevMode's normal WEB-INF classloader rules and just allow the
+    //  * system classloader to dominate. This makes JUnitHostImpl live in the
+    //  * right classloader (mine).
+    //  */
+    // protected WebAppContext createWebAppContext(TreeLogger logger,
+    //     File appRootDir) {
+    //   return new WebAppContext(appRootDir.getAbsolutePath(), "/") {
+    //     {
+    //       // Prevent file locking on Windows; pick up file changes.
+    //       getInitParams().put(
+    //           "org.eclipse.jetty.servlet.Default.useFileMappedBuffer", "false");
 
-          // Prefer the parent class loader so that JUnit works.
-          setParentLoaderPriority(true);
-        }
-      };
-    }
+    //       // Prefer the parent class loader so that JUnit works.
+    //       setParentLoaderPriority(true);
+    //     }
+    //   };
+    // }
   }
 
   /**

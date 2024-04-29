@@ -22,7 +22,7 @@ import java.util.List;
 
 /**
  * A GWT test to force the compilation of all default standard
- * {@link javax.validation.ConstraintValidator}s.
+ * {@link jakarta.validation.ConstraintValidator}s.
  */
 public class GwtCompileTest extends ValidationClientGwtTestCase {
 

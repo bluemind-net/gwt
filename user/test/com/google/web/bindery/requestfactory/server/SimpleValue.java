@@ -18,7 +18,7 @@ package com.google.web.bindery.requestfactory.server;
 import java.util.Date;
 import java.util.List;
 
-import javax.validation.constraints.Null;
+import jakarta.validation.constraints.Null;
 
 /**
  * A domain object that is used to demonstrate value-object behaviors.

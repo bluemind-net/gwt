@@ -53,9 +53,9 @@
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>javax.validation</groupId>
-                <artifactId>validation-api</artifactId>
-                <version>1.0.0.GA</version>
+                <groupId>jakarta.validation</groupId>
+                <artifactId>jakarta.validation-api</artifactId>
+                <version>3.1.0-M2</version>
             </dependency>
             <dependency>
                 <groupId>com.google.code.gson</groupId>

@@ -20,11 +20,11 @@ import com.google.gwt.validation.client.AbstractGwtValidatorFactory;
 import com.google.gwt.validation.client.impl.BaseGwtConfiguration;
 import com.google.gwt.validation.client.impl.GwtConfiguration;
 
-import javax.validation.Configuration;
-import javax.validation.ValidatorFactory;
-import javax.validation.spi.BootstrapState;
-import javax.validation.spi.ConfigurationState;
-import javax.validation.spi.ValidationProvider;
+import jakarta.validation.Configuration;
+import jakarta.validation.ValidatorFactory;
+import jakarta.validation.spi.BootstrapState;
+import jakarta.validation.spi.ConfigurationState;
+import jakarta.validation.spi.ValidationProvider;
 
 /**
  * GWT {@link ValidationProvider}.

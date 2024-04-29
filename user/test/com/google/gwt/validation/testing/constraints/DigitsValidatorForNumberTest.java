@@ -19,7 +19,7 @@ import com.google.gwt.validation.client.constraints.DigitsValidatorForNumber;
 
 import java.math.BigDecimal;
 
-import javax.validation.constraints.Digits;
+import jakarta.validation.constraints.Digits;
 
 /**
  * Tests for {@link DigitsValidatorForNumber}.

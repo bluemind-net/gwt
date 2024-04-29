@@ -20,6 +20,6 @@
     <include name="*.java" />
   </source>
   <replace-with class="org.hibernate.jsr303.tck.tests.validation.validatorcontext.TckTestValidatorFactory">
-    <when-type-is class="javax.validation.ValidatorFactory"/>
+    <when-type-is class="jakarta.validation.ValidatorFactory"/>
   </replace-with>
 </module>

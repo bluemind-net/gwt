@@ -30,7 +30,7 @@ import com.google.gwt.dev.util.log.PrintWriterTreeLogger;
 import java.io.File;
 import java.util.regex.Pattern;
 
-import javax.validation.ValidationException;
+import jakarta.validation.ValidationException;
 
 /**
  * Static utilities useful for testing TCK Generators.

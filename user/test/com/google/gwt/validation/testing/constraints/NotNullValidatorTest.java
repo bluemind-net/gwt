@@ -17,8 +17,8 @@ package com.google.gwt.validation.testing.constraints;
 
 import com.google.gwt.validation.client.constraints.NotNullValidator;
 
-import javax.validation.ConstraintValidator;
-import javax.validation.constraints.NotNull;
+import jakarta.validation.ConstraintValidator;
+import jakarta.validation.constraints.NotNull;
 
 /**
  * Tests for {@link NotNullValidator}.

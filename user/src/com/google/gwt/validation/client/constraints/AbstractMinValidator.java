@@ -18,8 +18,8 @@ package com.google.gwt.validation.client.constraints;
 import java.math.BigDecimal;
 import java.math.BigInteger;
 
-import javax.validation.ConstraintValidator;
-import javax.validation.constraints.Min;
+import jakarta.validation.ConstraintValidator;
+import jakarta.validation.constraints.Min;
 
 /**
  * Abstract {@link Min} constraint validator implementation for a <code>T</code>.

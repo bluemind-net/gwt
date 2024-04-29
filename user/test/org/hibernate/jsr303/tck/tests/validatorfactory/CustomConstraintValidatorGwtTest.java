@@ -20,7 +20,7 @@ import com.google.gwt.junit.client.GWTTestCase;
 import org.hibernate.jsr303.tck.util.client.NotSupported;
 import org.hibernate.jsr303.tck.util.client.NotSupported.Reason;
 
-import javax.validation.ValidationException;
+import jakarta.validation.ValidationException;
 
 /**
  * Wraps

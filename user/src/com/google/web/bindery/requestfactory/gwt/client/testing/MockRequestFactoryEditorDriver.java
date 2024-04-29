@@ -26,7 +26,7 @@ import com.google.web.bindery.requestfactory.shared.RequestFactory;
 import java.util.Collections;
 import java.util.List;
 
-import javax.validation.ConstraintViolation;
+import jakarta.validation.ConstraintViolation;
 
 /**
  * A no-op implementation of {@link RequestFactoryEditorDriver} that records its

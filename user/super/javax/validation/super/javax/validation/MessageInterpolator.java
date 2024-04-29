@@ -16,9 +16,9 @@
 * limitations under the License.
 */
 //Changed by Google
-package javax.validation;
+package jakarta.validation;
 
-import javax.validation.metadata.ConstraintDescriptor;
+import jakarta.validation.metadata.ConstraintDescriptor;
 
 import com.google.gwt.i18n.shared.GwtLocale;
 

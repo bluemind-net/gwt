@@ -56,7 +56,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import javax.validation.ConstraintViolation;
+import jakarta.validation.ConstraintViolation;
 
 /**
  * Tests for {@link com.google.web.bindery.requestfactory.shared.RequestFactory}
@@ -99,7 +99,7 @@ public class RequestFactoryTest extends RequestFactoryTestBase {
       assertEquals("userName", error.getPropertyPath().toString());
       assertTrue(THREE.test(error.getMessage()));
       assertTrue(THIRTY.test(error.getMessage()));
-      assertEquals("{javax.validation.constraints.Size.message}", error.getMessageTemplate());
+      assertEquals("{jakarta.validation.constraints.Size.message}", error.getMessageTemplate());
       assertSame(proxy, error.getRootBean());
       assertSame(proxy, error.getLeafBean());
       assertEquals(proxy.stableId().getProxyClass(), error.getRootBeanClass());
@@ -113,7 +113,7 @@ public class RequestFactoryTest extends RequestFactoryTestBase {
        * Make sure your class path includes:
        *
        * tools/lib/apache/log4j/log4j-1.2.17.jar
-       * tools/lib/hibernate/validator/hibernate-validator-4.1.0.Final.jar
+       * tools/lib/hibernate/validator/hibernate-validator-8.0.1.Final.jar
        * tools/lib/slf4j/slf4j-api/slf4j-api-1.7.12.jar
        * tools/lib/slf4j/slf4j-log4j12/slf4j-log4j12-1.7.12.jar
        */

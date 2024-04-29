@@ -18,7 +18,7 @@ package com.google.gwt.validation.client.impl;
 
 import java.util.Set;
 
-import javax.validation.ConstraintViolation;
+import jakarta.validation.ConstraintViolation;
 
 /**
  * Does shallow group-specific validation. Group sequences and Default group overriding are not

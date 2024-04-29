@@ -17,7 +17,7 @@ package com.google.gwt.validation.testing.constraints;
 
 import com.google.gwt.validation.client.constraints.MaxValidatorForNumber;
 
-import javax.validation.constraints.Max;
+import jakarta.validation.constraints.Max;
 
 /**
  * Tests for {@link MaxValidatorForNumber}.

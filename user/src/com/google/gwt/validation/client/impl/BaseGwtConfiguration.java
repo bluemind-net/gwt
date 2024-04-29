@@ -23,12 +23,16 @@ import com.google.gwt.validation.client.spi.GwtValidationProvider;
 import java.util.HashMap;
 import java.util.Map;
 
-import javax.validation.Configuration;
-import javax.validation.ConstraintValidatorFactory;
-import javax.validation.MessageInterpolator;
-import javax.validation.TraversableResolver;
-import javax.validation.ValidatorFactory;
-import javax.validation.spi.BootstrapState;
+import jakarta.validation.Configuration;
+import jakarta.validation.ConstraintValidatorFactory;
+import jakarta.validation.MessageInterpolator;
+import jakarta.validation.TraversableResolver;
+import jakarta.validation.ValidatorFactory;
+import jakarta.validation.spi.BootstrapState;
+import jakarta.validation.BootstrapConfiguration;
+import jakarta.validation.ParameterNameProvider;
+import jakarta.validation.ClockProvider;
+import jakarta.validation.valueextraction.ValueExtractor;
 
 /**
  * Base GWT {@link Configuration}.
@@ -42,6 +46,9 @@ public abstract class BaseGwtConfiguration implements
   protected ConstraintValidatorFactory constraintValidatorFactory;
   protected MessageInterpolator messageInterpolator;
   protected TraversableResolver traversableResolver;
+  protected BootstrapConfiguration bootstrapConfiguration;
+  protected ClockProvider clockProvider;
+  protected ParameterNameProvider parameterNameProvider;
 
   public BaseGwtConfiguration(GwtValidationProvider gwtValidationProvider,
       BootstrapState state) {
@@ -52,6 +59,11 @@ public abstract class BaseGwtConfiguration implements
   @Override
   public final BaseGwtConfiguration addProperty(String name, String value) {
     properties.put(name, value);
+    return this;
+  }
+  
+  @Override
+  public final BaseGwtConfiguration addValueExtractor(ValueExtractor<?> extractor) {
     return this;
   }
 
@@ -109,6 +121,33 @@ public abstract class BaseGwtConfiguration implements
       TraversableResolver resolver) {
     this.traversableResolver = resolver;
     return this;
+  }
+
+  @Override
+  public BaseGwtConfiguration clockProvider(ClockProvider clockProvider) {
+    this.clockProvider = clockProvider;
+    return this;
+  }
+
+  @Override
+  public ClockProvider getDefaultClockProvider() {
+    return this.clockProvider;
+  }
+
+  @Override
+  public BaseGwtConfiguration parameterNameProvider(ParameterNameProvider parameterNameProvider) {
+    this.parameterNameProvider = parameterNameProvider;
+    return this;
+  }
+
+  @Override
+  public ParameterNameProvider getDefaultParameterNameProvider() {
+    return this.parameterNameProvider;
+  }
+
+  @Override
+  public BootstrapConfiguration	getBootstrapConfiguration() {
+    return this.bootstrapConfiguration;
   }
 
 }

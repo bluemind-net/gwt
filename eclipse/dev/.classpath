@@ -8,7 +8,26 @@
 	<classpathentry kind="var" path="GWT_TOOLS/lib/apache/tapestry-util-text-4.0.2.jar" sourcepath="/GWT_TOOLS/lib/apache/tapestry-util-text-4.0.2-src.zip"/>
 	<classpathentry kind="var" path="GWT_TOOLS/lib/eclipse/org.eclipse.jdt.core_3.17.0.v20190306-2240.jar" sourcepath="/GWT_TOOLS/lib/eclipse/org.eclipse.jdt.core.source_3.17.0.v20190306-2240.jar"/>
 	<classpathentry kind="var" path="GWT_TOOLS/lib/eclipse/jdtCompilerAdapter_3.17.0.v20190306-2240.jar"/>
-	<classpathentry exported="true" kind="var" path="GWT_TOOLS/lib/jetty/jetty-9.2.14.v20151106/jetty-all-9.2.14.v20151106.jar"/>
+	<classpathentry exported="true" kind="var" path="GWT_TOOLS/lib/jetty/jetty-9.4.54.v20240208/jetty-all-9.4.54.v20240208-uber.jar"/>
+	<classpathentry exported="true" kind="var" path="GWT_TOOLS/lib/jetty/12.0.8/jetty-http-12.0.8.jar"/>
+	<classpathentry exported="true" kind="var" path="GWT_TOOLS/lib/jetty/12.0.8/jetty-jndi-12.0.8.jar"/>
+	<classpathentry exported="true" kind="var" path="GWT_TOOLS/lib/jetty/12.0.8/jetty-security-12.0.8.jar"/>
+	<classpathentry exported="true" kind="var" path="GWT_TOOLS/lib/jetty/12.0.8/jetty-util-12.0.8.jar"/>
+	<classpathentry exported="true" kind="var" path="GWT_TOOLS/lib/jetty/12.0.8/jetty-xml-12.0.8.jar"/>
+	<classpathentry exported="true" kind="var" path="GWT_TOOLS/lib/jetty/12.0.8/jetty-session-12.0.8.jar"/>
+	<classpathentry exported="true" kind="var" path="GWT_TOOLS/lib/jetty/12.0.8/jetty-io-12.0.8.jar"/>
+	<classpathentry exported="true" kind="var" path="GWT_TOOLS/lib/jetty/12.0.8/jetty-server-12.0.8.jar"/>
+	<classpathentry exported="true" kind="var" path="GWT_TOOLS/lib/jetty/12.0.8/jetty-slf4j-impl-12.0.8.jar"/>
+	<classpathentry exported="true" kind="var" path="GWT_TOOLS/lib/jetty/jetty-ee10-servlet-12.0.8.jar"/>
+    <classpathentry exported="true" kind="var" path="GWT_TOOLS/lib/jetty/jetty-ee10-webapp-12.0.8.jar"/>
+    <classpathentry exported="true" kind="var" path="GWT_TOOLS/lib/jetty/jetty-ee10-annotations-12.0.8.jar"/>
+    <classpathentry exported="true" kind="var" path="GWT_TOOLS/lib/jetty/jetty-ee10-apache-jsp-12.0.8.jar"/>
+    <classpathentry exported="true" kind="var" path="GWT_TOOLS/lib/jetty/jetty-ee10-plus-12.0.8.jar"/>
+    <classpathentry exported="true" kind="var" path="GWT_TOOLS/lib/jetty/jetty-ee10-servlets-12.0.8.jar"/>
+	<classpathentry exported="true" kind="var" path="GWT_TOOLS/lib/jetty/jetty-9.4.54.v20240208/jetty-continuation-9.4.54.v20240208.jar"/>
+	<!-- <classpathentry exported="true" kind="var" path="GWT_TOOLS/lib/jetty/jetty-9.4.54.v20240208/apache-jsp-9.4.54.v20240208.jar"/>
+	<classpathentry exported="true" kind="var" path="GWT_TOOLS/lib/jetty/jetty-9.4.54.v20240208/websocket-api-9.4.54.v20240208.jar"/>
+	<classpathentry exported="true" kind="var" path="GWT_TOOLS/lib/jetty/jetty-9.4.54.v20240208/websocket-common-9.4.54.v20240208.jar"/> -->
 	<classpathentry kind="var" path="GWT_TOOLS/lib/jsr305/jsr305.jar"/>
 	<classpathentry kind="var" path="GWT_TOOLS/lib/junit/junit-4.8.2.jar" sourcepath="/GWT_TOOLS/lib/junit/junit-4.8.2-src.zip"/>
 	<classpathentry kind="var" path="GWT_TOOLS/lib/objectweb/asm-7.1/asm-7.1.jar"/>
@@ -17,7 +36,6 @@
 	<classpathentry kind="var" path="GWT_TOOLS/lib/tomcat/catalina-optional-1.0.jar"/>
 	<classpathentry kind="var" path="GWT_TOOLS/lib/jetty/jetty-9.2.14.v20151106/mortbay-apache-jsp-8.0.9.M3.jar"/>
 	<classpathentry kind="var" path="GWT_TOOLS/lib/jetty/jetty-9.2.14.v20151106/mortbay-apache-el-8.0.9.M3.jar"/>
-	<classpathentry kind="var" path="GWT_TOOLS/lib/jetty/jetty-9.2.14.v20151106/jetty-apache-jsp-9.2.14.v20151106.jar"/>
 	<classpathentry kind="var" path="GWT_TOOLS/lib/htmlunit/htmlunit-2.19/htmlunit-2.19.jar"/>
 	<classpathentry kind="var" path="GWT_TOOLS/lib/htmlunit/htmlunit-2.19/htmlunit-core-js-2.15.jar"/>
 	<classpathentry kind="var" path="GWT_TOOLS/lib/protobuf/protobuf-2.5.0/protobuf-java-rebased-2.5.0.jar"/>
@@ -32,5 +50,6 @@
 	<classpathentry kind="var" path="GWT_TOOLS/lib/colt/colt-1.2.jar" sourcepath="/GWT_TOOLS/lib/colt/colt-1.2-src.jar"/>
 	<classpathentry kind="var" path="GWT_TOOLS/lib/objectweb/asm-7.1/asm-commons-7.1.jar"/>
 	<classpathentry kind="var" path="GWT_TOOLS/lib/objectweb/asm-7.1/asm-util-7.1.jar"/>
+	<classpathentry exported="true" kind="var" path="GWT_TOOLS/lib/google/google-collect-1.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

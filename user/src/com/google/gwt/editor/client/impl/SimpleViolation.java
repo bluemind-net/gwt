@@ -22,7 +22,7 @@ import com.google.gwt.editor.client.impl.DelegateMap.KeyMethod;
 import java.util.Iterator;
 import java.util.List;
 
-import javax.validation.ConstraintViolation;
+import jakarta.validation.ConstraintViolation;
 
 /**
  * Abstraction of a ConstraintViolation or a RequestFactory Violation object.

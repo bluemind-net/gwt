@@ -21,6 +21,6 @@
     <exclude name="*CompileTest.java" />
   </source>
   <replace-with class="org.hibernate.jsr303.tck.tests.constraints.validatorresolution.AmbiguousValidatorFactory">
-    <when-type-is class="javax.validation.ValidatorFactory"/>
+    <when-type-is class="jakarta.validation.ValidatorFactory"/>
   </replace-with>
 </module>

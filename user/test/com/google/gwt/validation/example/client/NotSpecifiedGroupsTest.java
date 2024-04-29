@@ -20,10 +20,10 @@ import com.google.gwt.validation.example.client.ExampleValidatorFactory.ServerGr
 
 import java.util.Set;
 
-import javax.validation.ConstraintViolation;
-import javax.validation.Validation;
-import javax.validation.Validator;
-import javax.validation.constraints.NotNull;
+import jakarta.validation.ConstraintViolation;
+import jakarta.validation.Validation;
+import jakarta.validation.Validator;
+import jakarta.validation.constraints.NotNull;
 
 /**
  * Tests used to verify that constraints belonging to a group which is not specified in the

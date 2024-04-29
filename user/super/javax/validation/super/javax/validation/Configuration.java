@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 // Changed by Google
-package javax.validation;
+package jakarta.validation;
 
 
 /**
@@ -38,7 +38,7 @@ package javax.validation;
  * by using one or more of the <code>Configuration</code> methods.
  * <p/>
  * The {@link ValidationProviderResolver} is specified at configuration time
- * (see {@link javax.validation.spi.ValidationProvider}).
+ * (see {@link jakarta.validation.spi.ValidationProvider}).
  * If none is explicitly requested, the default <code>ValidationProviderResolver</code> is used.
  * <p/>
  * The provider is selected in the following way:

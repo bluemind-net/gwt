@@ -17,6 +17,8 @@
 package org.hibernate.validator.engine;
 
 import com.google.gwt.user.client.rpc.IsSerializable;
+import com.google.gwt.validation.client.impl.ConstraintViolationImpl;
+import com.google.gwt.validation.client.impl.PathImpl;
 
 import java.util.HashSet;
 

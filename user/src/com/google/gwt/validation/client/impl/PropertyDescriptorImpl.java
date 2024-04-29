@@ -22,8 +22,10 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
-import javax.validation.metadata.ConstraintDescriptor;
-import javax.validation.metadata.PropertyDescriptor;
+import jakarta.validation.metadata.ConstraintDescriptor;
+import jakarta.validation.metadata.PropertyDescriptor;
+import jakarta.validation.metadata.GroupConversionDescriptor;
+import jakarta.validation.metadata.ContainerElementTypeDescriptor;
 
 /**
  * Describes a constrained bean property.
@@ -86,6 +88,16 @@ public final class PropertyDescriptorImpl implements PropertyDescriptor {
   @Override
   public boolean isCascaded() {
     return cascaded;
+  }
+
+  @Override
+  public Set<GroupConversionDescriptor> getGroupConversions() {
+    return null;
+  }
+
+  @Override
+  public Set<ContainerElementTypeDescriptor>	getConstrainedContainerElementTypes() {
+    return null;
   }
 
   public void setValidationGroupsMetadata(ValidationGroupsMetadata validationGroupsMetadata) {

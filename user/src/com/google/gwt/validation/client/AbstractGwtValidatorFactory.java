@@ -19,13 +19,13 @@ import com.google.gwt.core.client.GWT;
 import com.google.gwt.validation.client.impl.AbstractGwtValidator;
 import com.google.gwt.validation.client.impl.GwtValidatorContext;
 
-import javax.validation.ConstraintValidatorFactory;
-import javax.validation.MessageInterpolator;
-import javax.validation.TraversableResolver;
-import javax.validation.Validator;
-import javax.validation.ValidatorContext;
-import javax.validation.ValidatorFactory;
-import javax.validation.spi.ConfigurationState;
+import jakarta.validation.ConstraintValidatorFactory;
+import jakarta.validation.MessageInterpolator;
+import jakarta.validation.TraversableResolver;
+import jakarta.validation.Validator;
+import jakarta.validation.ValidatorContext;
+import jakarta.validation.ValidatorFactory;
+import jakarta.validation.spi.ConfigurationState;
 
 /**
  * Abstract {@link ValidatorFactory} that delegates to a GWT generated
@@ -49,7 +49,7 @@ import javax.validation.spi.ConfigurationState;
  * 
  * <pre>
  * &lt;replace-with class="com.example.MyValidatorFactory">
- *   &lt;when-type-is class="javax.validation.ValidatorFactory"/>
+ *   &lt;when-type-is class="jakarta.validation.ValidatorFactory"/>
  * &lt;/replace-with>
  * </pre>
  */

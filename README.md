@@ -19,7 +19,7 @@
 
  - In order to build GWT, `java` and `ant` are required in your system.
 
- - You need the [GWT tools repository](https://github.com/gwtproject/tools/)
+ - You need the [GWT tools repository](https://github.com/bluemind-net/gwt-tools)
    checked out and up-to-date. By default it is expected to be found at `../tools`.
    You can override the default location using the GWT_TOOLS environment variable
    or passing `-Dgwt.tools=` argument to ant.

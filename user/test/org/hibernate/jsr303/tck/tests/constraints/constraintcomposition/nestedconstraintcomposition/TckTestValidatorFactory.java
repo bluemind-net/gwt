@@ -25,7 +25,7 @@ import org.hibernate.jsr303.tck.tests.constraints.constraintcomposition.nestedco
 import org.hibernate.jsr303.tck.tests.constraints.constraintcomposition.nestedconstraintcomposition.NestedConstraintCompositionTest.DummyEntity3;
 import org.hibernate.jsr303.tck.tests.constraints.constraintcomposition.nestedconstraintcomposition.NestedConstraintCompositionTest.DummyEntity4;
 
-import javax.validation.Validator;
+import jakarta.validation.Validator;
 
 /**
  * {@link AbstractGwtValidatorFactory} implementation that uses

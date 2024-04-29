@@ -22,8 +22,8 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-import javax.validation.GroupDefinitionException;
-import javax.validation.groups.Default;
+import jakarta.validation.GroupDefinitionException;
+import jakarta.validation.groups.Default;
 
 /**
  * An instance of {@code GroupChain} defines the group order during one full validation call.

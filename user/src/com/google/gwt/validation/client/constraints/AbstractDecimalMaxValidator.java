@@ -17,8 +17,8 @@ package com.google.gwt.validation.client.constraints;
 
 import java.math.BigDecimal;
 
-import javax.validation.ConstraintValidator;
-import javax.validation.constraints.DecimalMax;
+import jakarta.validation.ConstraintValidator;
+import jakarta.validation.constraints.DecimalMax;
 
 /**
  * <p>

@@ -15,13 +15,13 @@
 * See the License for the specific language governing permissions and
 * limitations under the License.
 */
-package javax.validation.spi;
+package jakarta.validation.spi;
 
 import java.util.Map;
 import java.util.Set;
-import javax.validation.ConstraintValidatorFactory;
-import javax.validation.MessageInterpolator;
-import javax.validation.TraversableResolver;
+import jakarta.validation.ConstraintValidatorFactory;
+import jakarta.validation.MessageInterpolator;
+import jakarta.validation.TraversableResolver;
 
 /**
  * Contract between a <code>Configuration</code> and a

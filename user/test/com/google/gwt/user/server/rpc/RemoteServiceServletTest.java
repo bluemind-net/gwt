@@ -31,18 +31,18 @@ import java.util.EventListener;
 import java.util.Map;
 import java.util.Set;
 
-import javax.servlet.Filter;
-import javax.servlet.FilterRegistration;
-import javax.servlet.FilterRegistration.Dynamic;
-import javax.servlet.RequestDispatcher;
-import javax.servlet.Servlet;
-import javax.servlet.ServletConfig;
-import javax.servlet.ServletContext;
-import javax.servlet.ServletException;
-import javax.servlet.ServletRegistration;
-import javax.servlet.SessionCookieConfig;
-import javax.servlet.SessionTrackingMode;
-import javax.servlet.descriptor.JspConfigDescriptor;
+import jakarta.servlet.Filter;
+import jakarta.servlet.FilterRegistration;
+import jakarta.servlet.FilterRegistration.Dynamic;
+import jakarta.servlet.RequestDispatcher;
+import jakarta.servlet.Servlet;
+import jakarta.servlet.ServletConfig;
+import jakarta.servlet.ServletContext;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.ServletRegistration;
+import jakarta.servlet.SessionCookieConfig;
+import jakarta.servlet.SessionTrackingMode;
+import jakarta.servlet.descriptor.JspConfigDescriptor;
 
 /**
  * Test some of the failure modes associated with
@@ -224,15 +224,15 @@ public class RemoteServiceServletTest extends TestCase {
       throw new UnsupportedOperationException();
     }
 
-    public javax.servlet.ServletRegistration.Dynamic addServlet(String arg0, String arg1) {
+    public jakarta.servlet.ServletRegistration.Dynamic addServlet(String arg0, String arg1) {
       throw new UnsupportedOperationException();
     }
 
-    public javax.servlet.ServletRegistration.Dynamic addServlet(String arg0, Servlet arg1) {
+    public jakarta.servlet.ServletRegistration.Dynamic addServlet(String arg0, Servlet arg1) {
       throw new UnsupportedOperationException();
     }
 
-    public javax.servlet.ServletRegistration.Dynamic addServlet(
+    public jakarta.servlet.ServletRegistration.Dynamic addServlet(
         String arg0, Class<? extends Servlet> arg1) {
       throw new UnsupportedOperationException();
     }
@@ -334,7 +334,7 @@ public class RemoteServiceServletTest extends TestCase {
 
   /**
    * Test method for
-   * {@link com.google.gwt.user.server.rpc.RemoteServiceServlet#doGetSerializationPolicy(javax.servlet.http.HttpServletRequest, java.lang.String, java.lang.String)}.
+   * {@link com.google.gwt.user.server.rpc.RemoteServiceServlet#doGetSerializationPolicy(jakarta.servlet.http.HttpServletRequest, java.lang.String, java.lang.String)}.
    * 
    * This method tests that if the module path is in a different context than
    * the RemoteServiceServlet which is processing the request, a message will be
@@ -359,7 +359,7 @@ public class RemoteServiceServletTest extends TestCase {
 
   /**
    * Test method for
-   * {@link com.google.gwt.user.server.rpc.RemoteServiceServlet#doGetSerializationPolicy(javax.servlet.http.HttpServletRequest, java.lang.String, java.lang.String)}.
+   * {@link com.google.gwt.user.server.rpc.RemoteServiceServlet#doGetSerializationPolicy(jakarta.servlet.http.HttpServletRequest, java.lang.String, java.lang.String)}.
    * 
    * This method tests the success case. The resource exists and is in the same
    * path at the web application.

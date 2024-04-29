@@ -15,7 +15,7 @@
  */
 package org.hibernate.jsr303.tck.tests.validation;
 
-import javax.validation.ValidationException;
+import jakarta.validation.ValidationException;
 
 /**
  * Test wrapper for {@link ValidatePropertyTest}.

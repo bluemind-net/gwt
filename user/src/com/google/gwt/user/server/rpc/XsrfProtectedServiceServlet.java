@@ -24,8 +24,8 @@ import com.google.gwt.util.tools.shared.StringUtils;
 
 import java.lang.reflect.Method;
 
-import javax.servlet.ServletException;
-import javax.servlet.http.Cookie;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.Cookie;
 
 /**
  * EXPERIMENTAL and subject to change. Do not use this in production code.

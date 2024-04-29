@@ -24,8 +24,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import javax.validation.GroupDefinitionException;
-import javax.validation.ValidationException;
+import jakarta.validation.GroupDefinitionException;
+import jakarta.validation.ValidationException;
 
 /**
  * Helper class used to resolve groups and sequences into a single chain of groups which can then

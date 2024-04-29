@@ -115,9 +115,9 @@ public class ConditionWhenTypeAssignableTo extends Condition {
    *
    * @param typeName fully qualified type name to check for filtering
    */
-  // TODO(zundel): Can be removed when javax.validation is included in the JRE
+  // TODO(zundel): Can be removed when jakarta.validation is included in the JRE
   private boolean shouldSuppressWarning(TreeLogger logger, String typeName) {
-    if (typeName.startsWith("javax.validation.")
+    if (typeName.startsWith("jakarta.validation.")
         || typeName.startsWith("com.google.gwt.validation.")
         || typeName.startsWith("com.google.gwt.editor.client")) {
       if (!warnedMissingValidationJar) {

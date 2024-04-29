@@ -18,23 +18,23 @@
   <inherits name="com.google.gwt.regexp.RegExp" />
   <inherits name="com.google.gwt.i18n.I18N" />
   <inherits name="com.google.gwt.user.RemoteServiceDTO" />
-  <inherits name="javax.validation.Validation" />
+  <inherits name="jakarta.validation.Validation" />
   <source path="client" />
   <super-source path="super" />
   <public path="public" />
 
   <replace-with
     class="com.google.gwt.validation.client.GwtConstraintValidatorFactory">
-    <when-type-is class="javax.validation.ConstraintValidatorFactory" />
+    <when-type-is class="jakarta.validation.ConstraintValidatorFactory" />
   </replace-with>
   <replace-with
     class="com.google.gwt.validation.client.GwtMessageInterpolator">
-    <when-type-is class="javax.validation.MessageInterpolator" />
+    <when-type-is class="jakarta.validation.MessageInterpolator" />
   </replace-with>
 
   <replace-with
     class="com.google.gwt.validation.client.GwtValidationProviderResolver">
-    <when-type-is class="javax.validation.ValidationProviderResolver" />
+    <when-type-is class="jakarta.validation.ValidationProviderResolver" />
   </replace-with>
   <replace-with class="com.google.gwt.validation.client.impl.NullUserValidationMessageResolver">
     <!-- User can override this to have Custom messages -->
@@ -42,13 +42,13 @@
   </replace-with>
   <replace-with
     class="com.google.gwt.validation.client.spi.GwtValidationProvider">
-    <when-type-is class="javax.validation.spi.ValidationProvider" />
+    <when-type-is class="jakarta.validation.spi.ValidationProvider" />
   </replace-with>
 
   <!-- Generator -->
   <generate-with class="com.google.gwt.validation.rebind.ValidatorGenerator">
     <any>
-      <when-type-assignable class="javax.validation.Validator" />
+      <when-type-assignable class="jakarta.validation.Validator" />
       <when-type-assignable
         class="com.google.gwt.validation.client.impl.GwtSpecificValidator" />
     </any>

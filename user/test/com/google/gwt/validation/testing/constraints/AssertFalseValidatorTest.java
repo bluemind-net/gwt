@@ -17,7 +17,7 @@ package com.google.gwt.validation.testing.constraints;
 
 import com.google.gwt.validation.client.constraints.AssertFalseValidator;
 
-import javax.validation.constraints.AssertFalse;
+import jakarta.validation.constraints.AssertFalse;
 
 /**
  * Tests for {@link AssertFalseValidator}.

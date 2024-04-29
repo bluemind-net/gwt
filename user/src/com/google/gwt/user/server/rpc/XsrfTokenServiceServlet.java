@@ -22,7 +22,7 @@ import com.google.gwt.user.server.Util;
 import com.google.gwt.util.tools.shared.Md5Utils;
 import com.google.gwt.util.tools.shared.StringUtils;
 
-import javax.servlet.http.Cookie;
+import jakarta.servlet.http.Cookie;
 
 /**
  * EXPERIMENTAL and subject to change. Do not use this in production code.
@@ -150,8 +150,8 @@ public class XsrfTokenServiceServlet extends RemoteServiceServlet
 
   /**
    * Alternative constructor that accepts session cookie name instead of getting
-   * it from {@link javax.servlet.ServletConfig} or {@link
-   * javax.servlet.ServletContext}.
+   * it from {@link jakarta.servlet.ServletConfig} or {@link
+   * jakarta.servlet.ServletContext}.
    */
   public XsrfTokenServiceServlet(String sessionCookieName) {
     this.sessionCookieName = sessionCookieName;
