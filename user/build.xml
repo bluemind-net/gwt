@@ -388,11 +388,11 @@
   <target name="checkstyle-source" description="Static analysis of source">
     <gwt.checkstyle>
       <fileset dir="src">
-        <exclude name="javax/validation/super/javax/validation/constraints/Pattern.java"/>
-        <exclude name="javax/validation/super/javax/validation/spi/ConfigurationState.java"/>
-        <exclude name="javax/validation/super/javax/validation/MessageInterpolator.java"/>
-        <exclude name="javax/validation/super/javax/validation/Configuration.java"/>
-        <exclude name="javax/validation/super/javax/validation/Validation.java"/>
+        <exclude name="jakarta/validation/super/jakarta/validation/constraints/Pattern.java"/>
+        <exclude name="jakarta/validation/super/jakarta/validation/spi/ConfigurationState.java"/>
+        <exclude name="jakarta/validation/super/jakarta/validation/MessageInterpolator.java"/>
+        <exclude name="jakarta/validation/super/jakarta/validation/Configuration.java"/>
+        <exclude name="jakarta/validation/super/jakarta/validation/Validation.java"/>
         <exclude name="org/hibernate/validator/super/org/hibernate/validator/**/*.java"/>
         <exclude name="org/hibernate/validator/ValidationMessages.java"/>
       </fileset>

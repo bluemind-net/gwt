@@ -16,7 +16,11 @@
   <target name="merge_codeserver">
     <echo message="Merge gwt-dev.jar and gwt-codeserver.jar" />
     <gwt.jar destfile="${gwt.build.out}/gwt-dev-merged.jar">
-      <zipfileset src="${gwt.build.lib}/gwt-dev.jar"/>
+      <zipfileset src="${gwt.build.lib}/gwt-dev.jar">
+        <exclude name="org/w3c/dom"/>
+        <exclude name="org/xml/sax"/>
+        <exclude name="javax/xml/parsers"/>
+      </zipfileset>
       <zipfileset src="${gwt.build.lib}/gwt-codeserver.jar"/>
     </gwt.jar>
     <echo message="Overwriting gwt-dev.jar with merged gwt-dev.jar" />
@@ -29,7 +33,11 @@
     <mkdir dir="${gwt.build.out}/samples-scripts"/>
     <zip destfile="${project.dist}">
       <!-- jars -->
-      <zipfileset file="${gwt.build.lib}/gwt-dev.jar" prefix="${project.distname}" />
+      <zipfileset file="${gwt.build.lib}/gwt-dev.jar" prefix="${project.distname}" >
+        <exclude name="org/w3c/dom"/>
+        <exclude name="org/xml/sax"/>
+        <exclude name="javax/xml/parsers"/>
+      </zipfileset>
       <zipfileset file="${gwt.build.lib}/gwt-user.jar" prefix="${project.distname}" />
       <zipfileset file="${gwt.build.lib}/gwt-servlet*.jar" prefix="${project.distname}" />
       <zipfileset file="${gwt.build.lib}/gwt-codeserver.jar" prefix="${project.distname}" />
