@@ -35,23 +35,9 @@ VERSION_REGEX='[0-9][0-9]*\.[0-9][0-9]*\.[0-9][0-9]*-*.*'
 
 # use GWT_VERSION to specify the default version or get it from the file name
 gwtVersionDefault=${GWT_VERSION:=$(expr "$gwtPathDefault" : '.*gwt-\('$VERSION_REGEX'\)\.zip')}
-
-# prompt for info
-read -e -p"GWT version for Maven (${gwtVersionDefault:-ex: HEAD-SNAPSHOT}): " gwtVersion
 gwtVersion=${gwtVersion:=$gwtVersionDefault}
-if test "$gwtVersion" != "HEAD-SNAPSHOT" && ! expr "$gwtVersion" : "$VERSION_REGEX" >/dev/null; then
-  echo "Please enter a version of the form x.y.z or x.y.z-abc"
-  exit 1
-fi
 
-read -e -p"Path to GWT distro zip $gwtPathPrompt: " gwtPath
 gwtPath=${gwtPath:=$gwtPathDefault}
-if [[ ! -f  $gwtPath ]]; then
-  echo "ERROR: Cannot find file at \"$gwtPath\""
-  exit 1
-fi
-
-read -e -p"Deploy to repo URL ($repoUrlDefault): " repoUrl
 repoUrl=${repoUrl:=$repoUrlDefault}
 
 # setting the repoUrl to 'install' will instruct to maven-gwt to
@@ -61,8 +47,7 @@ if [[ "$repoUrl" == "$localRepoUrl" ]]; then
 fi
 
 # use GWT_GPG_PASS environment var by default if set
-read -p"GPG passphrase for jar signing (may skip for local deployment): " gpgPassphrase
-gpgPassphrase=${gpgPassphrase:=$GWT_GPG_PASS}
+gpgPassphrase=${GWT_GPG_PASS:=""}
 
 maven-gwt "$gwtVersion" \
           "$gwtPath" \
