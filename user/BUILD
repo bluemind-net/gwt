@@ -286,7 +286,7 @@ java_library(
     ),
     deps = [
         "//third_party/java/hibernate:validator",
-        "//third_party/java/javax_validation",
+        "//third_party/java/jakarta_validation",
         "//third_party/java_src/gwt:gwt-servlet",
     ],
 )

@@ -37,7 +37,7 @@ public interface ValidationMessages extends com.google.gwt.i18n.client.Constants
    */
   @DefaultStringValue("may not be null")
   @Key("jakarta.validation.constraints.NotNull.message")
-  String javax_validation_constraints_NotNull_message();
+  String jakarta_validation_constraints_NotNull_message();
 
   /**
    * Translated "{replace.in.user.bundle2}".
